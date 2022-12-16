@@ -1,0 +1,5 @@
+* { box-sizing: border-box; }
+
+body { margin: 0; font-family: "Roboto Flex", sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; background-color: lightgray; }
+
+.body-container { max-width: 1024px; min-height: 700px; margin: 0 auto 0 auto; background-color: white; border-radius: 5px; filter: drop-shadow(0 0 6px darkgray); }
