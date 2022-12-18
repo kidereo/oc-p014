@@ -1,0 +1,41 @@
+.add-employee {
+  form {
+    display: flex;
+    //flex-direction: column;
+    gap: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid $dark-green;
+    border-radius: 5px;
+    padding: 30px;
+
+    input {
+      width: 300px;
+      padding: 14px 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px 10px 20px;
+      min-width: 150px;
+      background-color: $light-green;
+      border: 2px solid $dark-green;
+      border-radius: 5px;
+      text-transform: uppercase;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $dark-green;
+        filter: drop-shadow(0 0 6px darkgray);
+      }
+    }
+  }
+
+
+}

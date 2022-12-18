@@ -1,5 +1,21 @@
 * { box-sizing: border-box; }
 
-body { margin: 0; font-family: "Roboto Flex", sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; background-color: lightgray; }
+body { margin: 0; font-family: "Roboto Flex", sans-serif; -webkit-font-smoothing: antialiased; background-color: lightgray; }
+
+main { padding: 0 20px; }
 
 .body-container { max-width: 1024px; min-height: 700px; margin: 0 auto 0 auto; background-color: white; border-radius: 5px; filter: drop-shadow(0 0 6px darkgray); }
+
+.header { display: flex; justify-content: space-between; align-items: center; padding: 20px 10px 20px 10px; border-bottom: 1px black solid; box-shadow: 0px 1px 5px #93ad18; margin-bottom: 50px; }
+
+.header-button { padding: 10px 20px 10px 20px; min-width: 150px; background-color: #93ad18; border: 2px solid #5a6f07; border-radius: 5px; text-transform: uppercase; color: white; font-weight: bold; cursor: pointer; position: absolute; right: 20px; }
+
+.header-button:hover { background-color: #5a6f07; filter: drop-shadow(0 0 6px darkgray); }
+
+.add-employee form { display: flex; gap: 15px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; border: 1px solid #5a6f07; border-radius: 5px; padding: 30px; }
+
+.add-employee form input { width: 300px; padding: 14px 10px; border: 1px solid #ccc; border-radius: 5px; }
+
+.add-employee form button { padding: 10px 20px 10px 20px; min-width: 150px; background-color: #93ad18; border: 2px solid #5a6f07; border-radius: 5px; text-transform: uppercase; color: white; font-weight: bold; cursor: pointer; }
+
+.add-employee form button:hover { background-color: #5a6f07; filter: drop-shadow(0 0 6px darkgray); }
