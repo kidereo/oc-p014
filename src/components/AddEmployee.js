@@ -9,8 +9,9 @@ const AddEmployee = ({closeModal}) => {
     const validateInputs = (event) => {
         event.preventDefault();
         if (!firstName || !lastName) {
-            setError("Please complete all fields!")
+            return setError("Please complete all fields!")
         }
+        console.log(`Employee ${firstName} ${lastName} added successfully.`);
         closeModal();
     };
 
@@ -27,17 +28,15 @@ const AddEmployee = ({closeModal}) => {
                     placeholder="Enter Last Name"
                     onChange={(event) => setLastName(event.target.value)}
                 />
-
+                {
+                    error && <p className="error">{error}</p>
+                }
                 <button
                     className="add-employee-button_submit"
                     type="submit"
                 >
                     Save
                 </button>
-
-                {
-                    error && <p>{error}</p>
-                }
             </form>
 
         </div>
