@@ -10,18 +10,21 @@ const Header = () => {
     };
 
     return (
-        <header className="header">
+        <div className="header">
             <img src={WealthHealthName} alt="WealthHealth" className="header-title"/>
+            <h1>HRnet</h1>
             <button
                 className="header-button"
                 onClick={() => setOpenAddEmployeeModal(!openAddEmployeeModal)}
             >
                 {!openAddEmployeeModal ? "Add Employee" : "Cancel Adding Employee"}
             </button>
-            {
-                openAddEmployeeModal && <AddEmployee closeModal={closeAddEmployeeModal}/>
-            }
-        </header>
+            <div>
+                {
+                    openAddEmployeeModal && <AddEmployee closeModal={closeAddEmployeeModal}/>
+                }
+            </div>
+        </div>
     )
 };
 

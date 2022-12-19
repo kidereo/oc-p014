@@ -1,17 +1,20 @@
 import React from 'react';
 import Header from './components/Header';
 import EmployeeList from './components/EmployeeList'
+import Footer from './components/Footer'
 
 function WealthHealth() {
     return (
         <div className="body-container">
-            <Header/>
+            <header>
+                <Header/>
+            </header>
             <main>
-                <h2>
-                    Current Employees
-                </h2>
                 <EmployeeList/>
             </main>
+            <footer>
+                <Footer/>
+            </footer>
         </div>
     );
 }

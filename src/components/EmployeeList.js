@@ -10,23 +10,28 @@ const EmployeeList = () => {
     ];
 
     return (
-        <table>
-            <thead>
-            <tr>
-                <th>No.</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Actions</th>
-            </tr>
-            </thead>
-            <tbody>
-            {
-                employees.map((employee) => (
-                    <Employee key={employee.id} employee={employee}/>
-                ))
-            }
-            </tbody>
-        </table>
+        <>
+            <h2>
+                Current Employees
+            </h2>
+            <table>
+                <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                {
+                    employees.map((employee) => (
+                        <Employee key={employee.id} employee={employee}/>
+                    ))
+                }
+                </tbody>
+            </table>
+        </>
     )
 };
 
