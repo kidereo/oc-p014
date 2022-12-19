@@ -1,18 +1,21 @@
 import React from 'react';
-import Employee from './Employee'
+import {useContext} from 'react';
+import Employee from './Employee';
+import {AppContext} from "../context/AppState";
 
-
+/**
+ * Create a collection of employees as a table.
+ *
+ * @returns {*}
+ * @constructor
+ */
 const EmployeeList = () => {
-    const employees = [
-        {id: 1, firstName: "James", lastName: "Bond"},
-        {id: 2, firstName: "Rosa", lastName: "Klebb"},
-        {id: 3, firstName: "Auric", lastName: "Goldfinger"}
-    ];
+    const {employees} = useContext(AppContext);
 
     return (
         <>
             <h2>
-                Current Employees
+                Current Employees: {employees.length}
             </h2>
             <table>
                 <thead>

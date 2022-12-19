@@ -1,5 +1,11 @@
 import React from 'react';
 
+/**
+ * A simple footer component.
+ *
+ * @returns {*}
+ * @constructor
+ */
 const Footer = () => {
     return (
         <div className="footer">

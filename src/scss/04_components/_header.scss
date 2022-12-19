@@ -4,8 +4,12 @@
   align-items: center;
   padding: 20px 10px 20px 10px;
   border-bottom: 1px black solid;
-  box-shadow: 0px 1px 5px $light-green;
+  box-shadow: 0 1px 5px $light-green;
   margin-bottom: 50px;
+
+  &-emblem {
+    height: 40px;
+  }
 
   h1 {
     margin: 0;
@@ -23,8 +27,9 @@
     color: white;
     font-weight: bold;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     right: 20px;
+
     &:hover {
       background-color: $dark-green;
       filter: drop-shadow(0 0 6px darkgray);
