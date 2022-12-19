@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <div className="header">
             <img src={WealthHealthName} alt="WealthHealth" className="header-title"/>
-            <h1>HRnet</h1>
+            <h1>| HRnet</h1>
             <button
                 className="header-button"
                 onClick={() => setOpenAddEmployeeModal(!openAddEmployeeModal)}
