@@ -1,5 +1,4 @@
-import React from 'react';
-import {useState, useContext} from 'react';
+import React, {useState, useContext, useEffect} from 'react';
 import {AppContext} from "../context/AppState";
 
 /**
@@ -10,12 +9,16 @@ import {AppContext} from "../context/AppState";
  * @constructor
  */
 const AddEmployee = ({closeModal}) => {
-    const {addEmployee, employees} = useContext(AppContext);
-    //const [id, setId] = useState(employees.length + 1);
-    const id = employees.length + 1;
+    const {addEmployee, id, incrementId} = useContext(AppContext);
+    //const id = employees.length + 1;
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [error, setError] = useState(false);
+
+    useEffect(() => {
+        incrementId();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     /**
      * Validate form inputs.

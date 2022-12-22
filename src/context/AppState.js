@@ -1,23 +1,26 @@
-import React from "react";
-import {createContext, useReducer} from "react";
+import React, {createContext, useReducer, useState} from "react";
 import {appReducer} from './AppReducer';
 
 const initialState = {
     employees: [
         {
-            id: 3,
+            id: 4,
             firstName: "James",
             lastName: "Bond"
         },
         {
-            id: 2,
+            id: 3,
             firstName: "Auric",
             lastName: "Goldfinger"
         },
         {
-            id: 1,
+            id: 2,
             firstName: "Francisco",
             lastName: "Scaramanga"
+        }, {
+            id: 1,
+            firstName: "Rosa",
+            lastName: "Klebb"
         },
     ]
 };
@@ -38,6 +41,11 @@ export const AppContext = createContext(initialState);
  */
 export const AppProvider = ({children}) => {
     const [state, dispatch] = useReducer(appReducer, initialState);
+    const [id, setId] = useState(state.employees.length);
+
+    const incrementId = () => {
+        setId(id + 1);
+    };
 
     const deleteEmployee = (id) => {
         dispatch({
@@ -58,7 +66,9 @@ export const AppProvider = ({children}) => {
             value={{
                 employees: state.employees,
                 deleteEmployee,
-                addEmployee
+                addEmployee,
+                id,
+                incrementId
             }}
         >
             {children}
