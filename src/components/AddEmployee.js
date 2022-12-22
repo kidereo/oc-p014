@@ -1,6 +1,8 @@
 import React, {useState, useContext, useEffect} from 'react';
 import {AppContext} from "../context/AppState";
-import departmentList from "../data/departments"
+import departmentList from "../data/departments";
+import DatePicker from 'react-datepicker';
+
 
 /**
  * Add a new employee.
@@ -14,7 +16,8 @@ const AddEmployee = ({closeModal}) => {
     //const id = employees.length + 1;
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
-    const [birthDate, setBirthDate] = useState('');
+    const [birthDate, setBirthDate] = useState(new Date());
+    const [startDate, setStartDate] = useState(new Date());
     const [department, setDepartment] = useState('Select');
     const [error, setError] = useState(false);
 
@@ -30,10 +33,10 @@ const AddEmployee = ({closeModal}) => {
      */
     const validateInputs = (event) => {
         event.preventDefault();
-        if (!firstName || !lastName || !birthDate || department === 'Select') {
+        if (!firstName || !lastName || !birthDate || !startDate || department === 'Select') {
             return setError("Please complete all fields!")
         }
-        addEmployee({id, firstName, lastName, birthDate, department});
+        addEmployee({id, firstName, lastName, birthDate, startDate, department});
         console.log(`Employee ${firstName} ${lastName} added successfully.`);
         closeModal();
     };
@@ -64,24 +67,41 @@ const AddEmployee = ({closeModal}) => {
                     />
                 </div>
 
+                {/*Start date field*/}
+                <div className="add-employee-form-field">
+                    <label>Start Date</label>
+                    <DatePicker
+                        selected={startDate}
+                        onChange={(date) => setStartDate(date)}
+                        todayButton="Today"
+                        peekNextMonth
+                        showMonthDropdown
+                        showYearDropdown
+                        dropdownMode="select"
+                        locale="en-US"/>
+                </div>
+
                 {/*Birthday field*/}
                 <div className="add-employee-form-field">
-                    <label htmlFor="birthDate">Date of Birth</label>
-                    <input
-                        type="text"
-                        id="birthDate"
-                        placeholder="Date of Birth"
-                        onChange={(event) => setBirthDate(event.target.value)}
-                    />
+                    <label>Date of Birth</label>
+                    <DatePicker
+                        selected={birthDate}
+                        onChange={(date) => setBirthDate(date)}
+                        todayButton="Today"
+                        peekNextMonth
+                        showMonthDropdown
+                        showYearDropdown
+                        dropdownMode="select"
+                        locale="en-US"/>
                 </div>
 
                 {/*Department field*/}
                 <div className="add-employee-form-field">
                     <label htmlFor="department">Department</label>
-                    <select
-                        id="department"
-                        value={department}
-                        onChange={(event) => setDepartment(event.target.value)}
+                    <select className="add-employee-form-field-selector"
+                            id="department"
+                            value={department}
+                            onChange={(event) => setDepartment(event.target.value)}
                     >
                         <option>{department}</option>
                         {departmentList.map((item, index) => {
@@ -99,6 +119,7 @@ const AddEmployee = ({closeModal}) => {
                     error && <p className="error">{error}</p>
                 }
 
+                {/*Submit button*/}
                 <button
                     className="add-employee-button_submit"
                     type="submit"

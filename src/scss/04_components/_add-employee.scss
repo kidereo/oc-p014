@@ -19,7 +19,14 @@
         margin-bottom: 5px;
       }
 
-      input, select{
+      input {
+        width: 300px;
+        padding: 14px 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      &-selector {
         width: 300px;
         padding: 14px 10px;
         border: 1px solid #ccc;
@@ -28,7 +35,7 @@
     }
   }
 
-  button {
+  &-button_submit {
     padding: 10px 20px 10px 20px;
     min-width: 150px;
     background-color: $light-green;
@@ -45,6 +52,7 @@
     }
   }
 }
+
 
 
 

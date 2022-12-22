@@ -6,21 +6,33 @@ const initialState = {
         {
             id: 4,
             firstName: "James",
-            lastName: "Bond"
+            lastName: "Bond",
+            birthDate: new Date(new Date() - Math.random()*(1e+13)),
+            startDate: new Date(new Date() - Math.random()*(1e+12)),
+            department: "Legal"
         },
         {
             id: 3,
             firstName: "Auric",
-            lastName: "Goldfinger"
+            lastName: "Goldfinger",
+            birthDate: new Date(new Date() - Math.random()*(1e+13)),
+            startDate: new Date(new Date() - Math.random()*(1e+12)),
+            department: "Engineering"
         },
         {
             id: 2,
             firstName: "Francisco",
-            lastName: "Scaramanga"
+            lastName: "Scaramanga",
+            birthDate: new Date(new Date() - Math.random()*(1e+13)),
+            startDate: new Date(new Date() - Math.random()*(1e+12)),
+            department: "Marketing"
         }, {
             id: 1,
             firstName: "Rosa",
-            lastName: "Klebb"
+            lastName: "Klebb",
+            birthDate: new Date(new Date() - Math.random()*(1e+13)),
+            startDate: new Date(new Date() - Math.random()*(1e+12)),
+            department: "Human Resources"
         },
     ]
 };

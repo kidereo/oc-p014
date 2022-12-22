@@ -23,8 +23,9 @@ const EmployeeList = () => {
                     <th>No.</th>
                     <th>First Name</th>
                     <th>Last Name</th>
-                    <th>Date of Birth</th>
+                    <th>Start Date</th>
                     <th>Department</th>
+                    <th>Date of Birth</th>
                     <th>Actions</th>
                 </tr>
                 </thead>

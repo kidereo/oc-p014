@@ -10,6 +10,9 @@ Développeur d'application - JavaScript React
 - Routing by [React Router](https://reactrouter.com/en/main).
 - Typechecking with [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html).
 
+## jQuery replacement components
+- Datepicker: [React Datepicker](https://reactdatepicker.com/) - A simple and reusable datepicker component for React by HackerOne.
+
 ## Prerequisites
 - [NodeJS](https://nodejs.org/en/).
 - [npm](https://www.npmjs.com/).

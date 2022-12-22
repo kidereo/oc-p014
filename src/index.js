@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/normalize.css';
 import './css/styles.css';
+import './css/react-datepicker.css';
 import WealthHealth from './WealthHealth';
 import reportWebVitals from './reportWebVitals';
 
