@@ -11,7 +11,8 @@ Développeur d'application - JavaScript React
 - Typechecking with [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html).
 
 ## jQuery replacement components
-- Datepicker: [React Datepicker](https://reactdatepicker.com/) - A simple and reusable datepicker component for React by HackerOne.
+- Datepicker: [React Datepicker](https://reactdatepicker.com/) - A simple and reusable datepicker component for React.
+- Modal dialog: [React-Toastify](https://fkhadra.github.io/react-toastify/introduction) - Easy to set up toast modals for React.
 
 ## Prerequisites
 - [NodeJS](https://nodejs.org/en/).

@@ -3,7 +3,6 @@ import {AppContext} from "../context/AppState";
 import departmentList from "../data/departments";
 import DatePicker from 'react-datepicker';
 
-
 /**
  * Add a new employee.
  *

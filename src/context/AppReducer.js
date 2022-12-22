@@ -11,7 +11,7 @@ export const appReducer = (state, action) => {
             return {
                 ...state,
                 employees: state.employees.filter((employee) => employee.id !== action.payload)
-            }
+            };
         }
         case 'ADD_EMPLOYEE': {
             return {

@@ -3,6 +3,7 @@ import Header from './components/Header';
 import EmployeeList from './components/EmployeeList'
 import Footer from './components/Footer'
 import {AppProvider, AppContext} from "./context/AppState";
+import {ToastContainer} from 'react-toastify';
 
 /**
  * Top app tree.
@@ -26,6 +27,7 @@ function WealthHealth() {
                             <footer>
                                 <Footer/>
                             </footer>
+                            <ToastContainer/>
                         </div>
                     )
                 }
