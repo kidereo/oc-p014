@@ -78,13 +78,14 @@ const AddEmployee = ({closeModal}) => {
                         showMonthDropdown
                         showYearDropdown
                         dropdownMode="select"
-                        locale="en-US"/>
+                    />
                 </div>
 
                 {/*Birthday field*/}
                 <div className="add-employee-form-field">
-                    <label>Date of Birth</label>
+                    <label htmlFor="birthDate">Date of Birth</label>
                     <DatePicker
+                        id="birthDate"
                         selected={birthDate}
                         onChange={(date) => setBirthDate(date)}
                         todayButton="Today"
@@ -92,7 +93,7 @@ const AddEmployee = ({closeModal}) => {
                         showMonthDropdown
                         showYearDropdown
                         dropdownMode="select"
-                        locale="en-US"/>
+                    />
                 </div>
 
                 {/*Department field*/}
