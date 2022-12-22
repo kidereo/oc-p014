@@ -8,10 +8,11 @@ import {AppContext} from "../context/AppState";
  * @param id
  * @param firstName
  * @param lastName
+ * @param birthDate
  * @returns {*}
  * @constructor
  */
-const Employee = ({employee: {id, firstName, lastName}}) => {
+const Employee = ({employee: {id, firstName, lastName, birthDate, department}}) => {
     const {deleteEmployee} = useContext(AppContext);
 
     return (
@@ -19,6 +20,8 @@ const Employee = ({employee: {id, firstName, lastName}}) => {
             <td>{id}</td>
             <td>{firstName}</td>
             <td>{lastName}</td>
+            <td>{birthDate}</td>
+            <td>{department}</td>
             <td>
                 <div>
                     {/*<i className='fas fa-edit'></i>*/}

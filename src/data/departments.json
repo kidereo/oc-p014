@@ -1,0 +1,22 @@
+[
+    {
+        "key": "Sales",
+        "value": "Sales"
+    },
+    {
+        "key": "Marketing",
+        "value": "Marketing"
+    },
+    {
+        "key": "Engineering",
+        "value": "Engineering"
+    },
+    {
+        "key": "Human Resources",
+        "value": "Human Resources"
+    },
+    {
+        "key": "Legal",
+        "value": "Legal"
+    }
+]

@@ -1,5 +1,6 @@
 import React, {useState, useContext, useEffect} from 'react';
 import {AppContext} from "../context/AppState";
+import departmentList from "../data/departments"
 
 /**
  * Add a new employee.
@@ -13,6 +14,8 @@ const AddEmployee = ({closeModal}) => {
     //const id = employees.length + 1;
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
+    const [birthDate, setBirthDate] = useState('');
+    const [department, setDepartment] = useState('Select');
     const [error, setError] = useState(false);
 
     useEffect(() => {
@@ -27,10 +30,10 @@ const AddEmployee = ({closeModal}) => {
      */
     const validateInputs = (event) => {
         event.preventDefault();
-        if (!firstName || !lastName) {
+        if (!firstName || !lastName || !birthDate || department === 'Select') {
             return setError("Please complete all fields!")
         }
-        addEmployee({id, firstName, lastName});
+        addEmployee({id, firstName, lastName, birthDate, department});
         console.log(`Employee ${firstName} ${lastName} added successfully.`);
         closeModal();
     };
@@ -38,19 +41,64 @@ const AddEmployee = ({closeModal}) => {
     return (
         <div className="add-employee">
             <form className="add-employee-form" onSubmit={validateInputs}>
-                <input
-                    type="text"
-                    placeholder="Enter First Name"
-                    onChange={(event) => setFirstName(event.target.value)}
-                />
-                <input
-                    type="text"
-                    placeholder="Enter Last Name"
-                    onChange={(event) => setLastName(event.target.value)}
-                />
+
+                {/*First name field*/}
+                <div className="add-employee-form-field">
+                    <label htmlFor="firstName">First Name</label>
+                    <input
+                        type="text"
+                        id="firstName"
+                        placeholder="Enter First Name"
+                        onChange={(event) => setFirstName(event.target.value)}
+                    />
+                </div>
+
+                {/*Last name field*/}
+                <div className="add-employee-form-field">
+                    <label htmlFor="lastName">Last Name</label>
+                    <input
+                        type="text"
+                        id="lastName"
+                        placeholder="Enter Last Name"
+                        onChange={(event) => setLastName(event.target.value)}
+                    />
+                </div>
+
+                {/*Birthday field*/}
+                <div className="add-employee-form-field">
+                    <label htmlFor="birthDate">Date of Birth</label>
+                    <input
+                        type="text"
+                        id="birthDate"
+                        placeholder="Date of Birth"
+                        onChange={(event) => setBirthDate(event.target.value)}
+                    />
+                </div>
+
+                {/*Department field*/}
+                <div className="add-employee-form-field">
+                    <label htmlFor="department">Department</label>
+                    <select
+                        id="department"
+                        value={department}
+                        onChange={(event) => setDepartment(event.target.value)}
+                    >
+                        <option>{department}</option>
+                        {departmentList.map((item, index) => {
+                            return (
+                                <option key={index} value={item.value}>
+                                    {item.value}
+                                </option>
+                            )
+                        })}
+                    </select>
+                </div>
+
+                {/*Error area*/}
                 {
                     error && <p className="error">{error}</p>
                 }
+
                 <button
                     className="add-employee-button_submit"
                     type="submit"

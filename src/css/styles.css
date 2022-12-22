@@ -18,12 +18,14 @@ main { padding: 0 20px; }
 
 .header-button:hover { background-color: #5a6f07; filter: drop-shadow(0 0 6px darkgray); }
 
-.add-employee form { display: flex; flex-direction: column; gap: 15px; position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%); background-color: white; border: 1px solid #5a6f07; border-radius: 5px; padding: 30px; }
+.add-employee-form { display: flex; flex-direction: column; gap: 15px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; border: 1px solid #5a6f07; border-radius: 5px; padding: 30px; }
 
-.add-employee form input { width: 300px; padding: 14px 10px; border: 1px solid #ccc; border-radius: 5px; }
+.add-employee-form-field label { display: flex; flex-direction: column; margin-bottom: 5px; }
 
-.add-employee form button { padding: 10px 20px 10px 20px; min-width: 150px; background-color: #93ad18; border: 2px solid #5a6f07; border-radius: 5px; text-transform: uppercase; color: white; font-weight: bold; cursor: pointer; }
+.add-employee-form-field input, .add-employee-form-field select { width: 300px; padding: 14px 10px; border: 1px solid #ccc; border-radius: 5px; }
 
-.add-employee form button:hover { background-color: #5a6f07; filter: drop-shadow(0 0 6px darkgray); }
+.add-employee button { padding: 10px 20px 10px 20px; min-width: 150px; background-color: #93ad18; border: 2px solid #5a6f07; border-radius: 5px; text-transform: uppercase; color: white; font-weight: bold; cursor: pointer; }
+
+.add-employee button:hover { background-color: #5a6f07; filter: drop-shadow(0 0 6px darkgray); }
 
 .footer { height: 50px; background-color: #5a6f07; margin-top: 50px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bolder; position: fixed; bottom: 0; width: 100%; }
