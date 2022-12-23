@@ -66,12 +66,13 @@ const AddEmployee = ({closeModal}) => {
                     />
                 </div>
 
-                {/*Start date field*/}
+                {/*Birthday field*/}
                 <div className="add-employee-form-field">
-                    <label>Start Date</label>
+                    <label htmlFor="birthDate">Date of Birth</label>
                     <DatePicker
-                        selected={startDate}
-                        onChange={(date) => setStartDate(date)}
+                        id="birthDate"
+                        selected={birthDate}
+                        onChange={(date) => setBirthDate(date)}
                         todayButton="Today"
                         peekNextMonth
                         showMonthDropdown
@@ -80,13 +81,12 @@ const AddEmployee = ({closeModal}) => {
                     />
                 </div>
 
-                {/*Birthday field*/}
+                {/*Start date field*/}
                 <div className="add-employee-form-field">
-                    <label htmlFor="birthDate">Date of Birth</label>
+                    <label>Start Date</label>
                     <DatePicker
-                        id="birthDate"
-                        selected={birthDate}
-                        onChange={(date) => setBirthDate(date)}
+                        selected={startDate}
+                        onChange={(date) => setStartDate(date)}
                         todayButton="Today"
                         peekNextMonth
                         showMonthDropdown
@@ -124,7 +124,7 @@ const AddEmployee = ({closeModal}) => {
                     className="add-employee-button_submit"
                     type="submit"
                 >
-                    Save
+                    Add
                 </button>
             </form>
         </div>

@@ -18,7 +18,7 @@ main { padding: 0 20px; }
 
 .header-button:hover { background-color: #5a6f07; filter: drop-shadow(0 0 6px darkgray); }
 
-.add-employee-form { display: flex; flex-direction: column; gap: 15px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; border: 1px solid #5a6f07; border-radius: 5px; padding: 30px; }
+.add-employee-form { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%); background-color: white; border: 1px solid #5a6f07; border-radius: 5px; padding: 30px; }
 
 .add-employee-form-field label { display: flex; flex-direction: column; margin-bottom: 5px; }
 
