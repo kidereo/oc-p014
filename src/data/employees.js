@@ -14,14 +14,14 @@ const departments = sampleDepartments.map(function (item) {
  * @returns {{data: Array}}
  */
 const generateEmployees = (number) => {
-    let employees = [];
+    const employees = [];
     for (let id = 1; id <= number; id++) {
-        let gender = faker.name.sexType();
-        let firstName = faker.name.firstName(gender);
-        let lastName = faker.name.lastName(gender);
-        let birthDate = faker.date.birthdate({min: 35, max: 65, mode: 'age'});
-        let startDate = faker.date.between((date => date.setFullYear(date.getFullYear() - 10))(new Date()), new Date());
-        let department = faker.helpers.arrayElement(departments);
+        const gender = faker.name.sexType();
+        const firstName = faker.name.firstName(gender);
+        const lastName = faker.name.lastName(gender);
+        const birthDate = faker.date.birthdate({min: 35, max: 65, mode: 'age'});
+        const startDate = faker.date.between((date => date.setFullYear(date.getFullYear() - 10))(new Date()), new Date());
+        const department = faker.helpers.arrayElement(departments);
 
         employees.push({
             "id": id,
@@ -30,6 +30,10 @@ const generateEmployees = (number) => {
             "birthDate": birthDate,
             "startDate": startDate,
             "department": department,
+        });
+
+        employees.sort(function (a, b) {
+            return b.id - a.id;
         });
     }
 
