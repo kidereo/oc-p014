@@ -1,60 +1,27 @@
 import React, {createContext, useReducer, useState} from "react";
 import {appReducer} from './AppReducer';
 import {toast} from 'react-toastify';
-
-const initialState = {
-    employees: [
-        {
-            id: 5,
-            firstName: "Atticus",
-            lastName: "Finch",
-            birthDate: new Date(new Date() - Math.random() * (1e+13)),
-            startDate: new Date(new Date() - Math.random() * (1e+12)),
-            department: "Legal"
-        },
-        {
-            id: 4,
-            firstName: "Elizabeth",
-            lastName: "Bennet",
-            birthDate: new Date(new Date() - Math.random() * (1e+13)),
-            startDate: new Date(new Date() - Math.random() * (1e+12)),
-            department: "Sales"
-        },
-        {
-            id: 3,
-            firstName: "Fitzwilliam",
-            lastName: "Darcy",
-            birthDate: new Date(new Date() - Math.random() * (1e+13)),
-            startDate: new Date(new Date() - Math.random() * (1e+12)),
-            department: "Engineering"
-        },
-        {
-            id: 2,
-            firstName: "Jane",
-            lastName: "Eyre",
-            birthDate: new Date(new Date() - Math.random() * (1e+13)),
-            startDate: new Date(new Date() - Math.random() * (1e+12)),
-            department: "Marketing"
-        }, {
-            id: 1,
-            firstName: "Hermione",
-            lastName: "Granger",
-            birthDate: new Date(new Date() - Math.random() * (1e+13)),
-            startDate: new Date(new Date() - Math.random() * (1e+12)),
-            department: "Human Resources"
-        },
-    ]
-};
+import sampleEmployees from '../data/employees'
 
 /**
- * Application context.
+ * Load sample employees and send a notification.
+ *
+ * @type {{employees: {firstName: string | * | never, lastName: string | * | never, id: number, department: string | *, birthDate: Date | *, startDate: Date | *}[]}}
+ */
+const initialState = {
+    employees: sampleEmployees
+};
+toast.success(`Sample data of ${initialState.employees.length} employees initialised!`);
+
+/**
+ * Set application context.
  *
  * @type {React.Context<{employees: *[]}>}
  */
 export const AppContext = createContext(initialState);
 
 /**
- * Application provider.
+ * Create application provider.
  *
  * @param children
  * @returns {*}

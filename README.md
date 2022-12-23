@@ -9,6 +9,7 @@ Développeur d'application - JavaScript React
 - Font: [Roboto Flex](https://fonts.google.com/specimen/Roboto+Flex) from [Google Fonts](https://fonts.google.com/). 
 - Routing by [React Router](https://reactrouter.com/en/main).
 - Typechecking with [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html).
+- Fake (but realistic) data by [Faker](https://fakerjs.dev/).
 
 ## jQuery replacement components
 - Datepicker: [React Datepicker](https://reactdatepicker.com/) - A simple and reusable datepicker component for React.
