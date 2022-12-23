@@ -2,6 +2,7 @@ import React, {useState, useContext, useEffect} from 'react';
 import {AppContext} from "../context/AppState";
 import departmentList from "../data/departments";
 import DatePicker from 'react-datepicker';
+import Dropdown from './Dropdown';
 
 /**
  * Add a new employee.
@@ -121,6 +122,12 @@ const AddEmployee = ({closeModal}) => {
                 >
                     Add employee
                 </button>
+
+
+                <Dropdown
+                    placeHolder = "Select Department"
+                    options={departmentList}
+                />
 
                 {/*Error area*/}
                 {

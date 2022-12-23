@@ -1,10 +1,10 @@
 import {faker} from '@faker-js/faker';
-import sampleDepartments from './departments'
+import departmentList from './departments'
 
 /**
  * Function to randomize departments in the existing file.
  */
-const departments = sampleDepartments.map(function (item) {
+const departments = departmentList.map(function (item) {
     return item[Object.keys(item)[1]];
 });
 

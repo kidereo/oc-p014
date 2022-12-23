@@ -9,6 +9,7 @@ import {AppContext} from "../context/AppState";
  * @param firstName
  * @param lastName
  * @param birthDate
+ * @param startDate
  * @param department
  * @returns {*}
  * @constructor
