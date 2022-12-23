@@ -114,18 +114,19 @@ const AddEmployee = ({closeModal}) => {
                     </select>
                 </div>
 
-                {/*Error area*/}
-                {
-                    error && <p className="error">{error}</p>
-                }
-
                 {/*Submit button*/}
                 <button
                     className="add-employee-button_submit"
                     type="submit"
                 >
-                    Add
+                    Add employee
                 </button>
+
+                {/*Error area*/}
+                {
+                    error && <p className="error">{error}</p>
+                }
+
             </form>
         </div>
     )

@@ -65,15 +65,14 @@ export const AppProvider = ({children}) => {
     const [id, setId] = useState(state.employees.length);
 
     const incrementId = () => setId(id + 1);
-    const notifyEmployeeRemoved = () => toast.error("Employee removed!");
-    const notifyEmployeeAdded = () => toast.success("Employee added!");
 
     const deleteEmployee = (id) => {
         dispatch({
             type: 'DELETE_EMPLOYEE',
             payload: id
         });
-        notifyEmployeeRemoved();
+        const employee = state.employees.find(employee => employee.id === id);
+        toast.warn(`${employee.firstName} ${employee.lastName} removed!`);
     };
 
     const addEmployee = (employee) => {
@@ -81,7 +80,7 @@ export const AppProvider = ({children}) => {
             type: 'ADD_EMPLOYEE',
             payload: employee
         });
-        notifyEmployeeAdded();
+        toast.success(`${employee.firstName} ${employee.lastName} added!`);
     };
 
     return (
