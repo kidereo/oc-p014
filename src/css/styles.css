@@ -24,10 +24,12 @@ main { padding: 0 20px; }
 
 .add-employee-form-field input { width: 300px; padding: 14px 10px; border: 1px solid #ccc; border-radius: 5px; }
 
+.add-employee-form-field input:focus { outline: 2px solid #5a6f07; }
+
 .add-employee-form-field-selector { width: 300px; padding: 14px 10px; border: 1px solid #ccc; border-radius: 5px; }
 
 .add-employee-button_submit { padding: 10px 20px 10px 20px; min-width: 150px; background-color: #93ad18; border: 2px solid #5a6f07; border-radius: 5px; text-transform: uppercase; color: white; font-weight: bold; cursor: pointer; }
 
 .add-employee-button_submit:hover { background-color: #5a6f07; filter: drop-shadow(0 0 6px darkgray); }
 
-.footer { height: 50px; background-color: #5a6f07; margin-top: 50px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bolder; position: fixed; bottom: 0; width: 100%; }
+.footer { height: 50px; background-color: #5a6f07; display: flex; align-items: center; justify-content: center; color: white; font-weight: bolder; position: fixed; bottom: -50px; width: 100%; }

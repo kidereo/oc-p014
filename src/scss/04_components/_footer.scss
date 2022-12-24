@@ -1,13 +1,12 @@
 .footer {
   height: 50px;
   background-color: $dark-green;
-  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-weight: bolder;
   position: fixed;
-  bottom: 0;
+  bottom: -50px;
   width: 100%;
 }

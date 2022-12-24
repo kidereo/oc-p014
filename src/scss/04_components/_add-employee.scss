@@ -24,6 +24,10 @@
         padding: 14px 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
+
+        &:focus {
+          outline: 2px solid rgb(90, 111, 7);
+        }
       }
 
       &-selector {

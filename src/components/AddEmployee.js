@@ -1,4 +1,4 @@
-import React, {useState, useContext, useEffect} from 'react';
+import React, {useState, useContext, useEffect, useCallback} from 'react';
 import {AppContext} from "../context/AppState";
 import departmentList from "../data/departments";
 import DatePicker from 'react-datepicker';
@@ -20,6 +20,14 @@ const AddEmployee = ({closeModal}) => {
     const [startDate, setStartDate] = useState(new Date());
     const [department, setDepartment] = useState('Select');
     const [error, setError] = useState(false);
+
+    //Experiment
+    const wrapperSetDepartment = useCallback(val => {
+        setDepartment(val);
+    }, [setDepartment]);
+
+    //End experiment
+
 
     useEffect(() => {
         incrementId();
@@ -95,9 +103,18 @@ const AddEmployee = ({closeModal}) => {
                         dropdownMode="select"
                     />
                 </div>
-
-                {/*Department field*/}
+                {/*Department dropdown component*/}
                 <div className="add-employee-form-field">
+                    <label>Department</label>
+                    <Dropdown
+                        parentElementStateSetter={wrapperSetDepartment}
+                        placeHolder="Select Department"
+                        options={departmentList}
+                    />
+                </div>
+
+                {/*Department field styled as HTML <select>*/}
+                {/*<div className="add-employee-form-field">
                     <label htmlFor="department">Department</label>
                     <select className="add-employee-form-field-selector"
                             id="department"
@@ -113,7 +130,7 @@ const AddEmployee = ({closeModal}) => {
                             )
                         })}
                     </select>
-                </div>
+                </div>*/}
 
                 {/*Submit button*/}
                 <button
@@ -122,12 +139,6 @@ const AddEmployee = ({closeModal}) => {
                 >
                     Add employee
                 </button>
-
-
-                <Dropdown
-                    placeHolder = "Select Department"
-                    options={departmentList}
-                />
 
                 {/*Error area*/}
                 {
