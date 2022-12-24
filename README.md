@@ -10,7 +10,7 @@ Développeur d'application - JavaScript React
 - Routing by [React Router](https://reactrouter.com/en/main).
 - Typechecking with [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html).
 - Fake (but realistic) data by [Faker](https://fakerjs.dev/).
-- Icons from [Interface Line Icons 2 Collection](https://www.svgrepo.com/collection/interface-line-icons-2/).
+- Icons from [Mingcute Tiny Bold Line Icons Collection](https://www.svgrepo.com/collection/mingcute-tiny-bold-line-icons/).
 
 ## jQuery replacement components
 - Datepicker: [React Datepicker](https://reactdatepicker.com/) - A simple and reusable datepicker component for React.
