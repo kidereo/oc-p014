@@ -1,7 +1,7 @@
 import React, {createContext, useReducer, useState} from "react";
 import {appReducer} from './AppReducer';
 import {toast} from 'react-toastify';
-import employeeList from '../data/employeeFactory'
+import employeeMock from '../data/employeeFactory'
 
 /**
  * Load sample employees and send a notification.
@@ -9,7 +9,7 @@ import employeeList from '../data/employeeFactory'
  * @type {{employees: {firstName: string | * | never, lastName: string | * | never, id: number, department: string | *, birthDate: Date | *, startDate: Date | *}[]}}
  */
 const initialState = {
-    employees: employeeList
+    employees: employeeMock
 };
 toast.success(`Sample data of ${initialState.employees.length} employees initialised!`);
 

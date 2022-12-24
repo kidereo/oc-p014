@@ -10,6 +10,7 @@ Développeur d'application - JavaScript React
 - Routing by [React Router](https://reactrouter.com/en/main).
 - Typechecking with [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html).
 - Fake (but realistic) data by [Faker](https://fakerjs.dev/).
+- Icons from [Interface Line Icons 2 Collection](https://www.svgrepo.com/collection/interface-line-icons-2/).
 
 ## jQuery replacement components
 - Datepicker: [React Datepicker](https://reactdatepicker.com/) - A simple and reusable datepicker component for React.
@@ -21,5 +22,5 @@ Développeur d'application - JavaScript React
 
 ## References
 - Elijah Trillionz: [How To Build An App With React Context API](https://dev.to/elijahtrillionz/how-to-build-an-app-with-react-context-api-512e).
-- Thi Tran: [How to create a Dropdown select component in React?](https://medium.com/tinyso/how-to-create-a-dropdown-select-component-in-react-bf85df53e206).
+- Thi Tran: [How to create a Dropdown select component in React](https://medium.com/tinyso/how-to-create-a-dropdown-select-component-in-react-bf85df53e206).
 - Jan Bodnar: [The faker.js tutorial](https://zetcode.com/javascript/fakerjs/).
