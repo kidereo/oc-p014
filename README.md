@@ -18,3 +18,8 @@ Développeur d'application - JavaScript React
 ## Prerequisites
 - [NodeJS](https://nodejs.org/en/).
 - [npm](https://www.npmjs.com/).
+
+## References
+- Elijah Trillionz: [How To Build An App With React Context API](https://dev.to/elijahtrillionz/how-to-build-an-app-with-react-context-api-512e).
+- Thi Tran: [How to create a Dropdown select component in React?](https://medium.com/tinyso/how-to-create-a-dropdown-select-component-in-react-bf85df53e206).
+- Jan Bodnar: [The faker.js tutorial](https://zetcode.com/javascript/fakerjs/).

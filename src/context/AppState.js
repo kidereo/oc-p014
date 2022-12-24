@@ -1,7 +1,7 @@
 import React, {createContext, useReducer, useState} from "react";
 import {appReducer} from './AppReducer';
 import {toast} from 'react-toastify';
-import employeeList from '../data/employees'
+import employeeList from '../data/employeeFactory'
 
 /**
  * Load sample employees and send a notification.
