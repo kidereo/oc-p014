@@ -1,6 +1,6 @@
 import React from 'react';
 import {useContext} from 'react';
-import {AppContext} from "../context/AppState";
+import {AppContext} from '../context/AppState';
 import {IconDelete} from '../assets/svg-icons';
 
 /**
@@ -12,10 +12,11 @@ import {IconDelete} from '../assets/svg-icons';
  * @param birthDate
  * @param startDate
  * @param department
+ * @param homeState
  * @returns {*}
  * @constructor
  */
-const Employee = ({employee: {id, firstName, lastName, birthDate, startDate, department}}) => {
+const Employee = ({employee: {id, firstName, lastName, birthDate, startDate, department, homeState}}) => {
     const {deleteEmployee} = useContext(AppContext);
 
     const formatDate = (date) => {
@@ -31,11 +32,12 @@ const Employee = ({employee: {id, firstName, lastName, birthDate, startDate, dep
             <td>{formatDate(startDate)}</td>
             <td>{department}</td>
             <td>{formatDate(birthDate)}</td>
+            <td>{homeState}</td>
             <td>
                 <div>
                     {/*<i className='fas fa-edit'></i>
                     <i className='fas fa-trash' onClick={() => deleteEmployee(id)}></i>*/}
-                    <div style={{cursor: "pointer"}} onClick={() => deleteEmployee(id)}>
+                    <div style={{cursor: 'pointer'}} onClick={() => deleteEmployee(id)}>
                         <IconDelete/>
                     </div>
                 </div>

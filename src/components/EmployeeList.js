@@ -1,7 +1,7 @@
 import React from 'react';
 import {useContext} from 'react';
 import Employee from './Employee';
-import {AppContext} from "../context/AppState";
+import {AppContext} from '../context/AppState';
 
 /**
  * Create a collection of employees as a table.
@@ -26,6 +26,7 @@ const EmployeeList = () => {
                     <th>Start Date</th>
                     <th>Department</th>
                     <th>Date of Birth</th>
+                    <th>Home State</th>
                     <th>Actions</th>
                 </tr>
                 </thead>

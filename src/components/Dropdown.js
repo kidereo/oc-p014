@@ -1,15 +1,19 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import {IconArrowDown, IconArrowUp} from '../assets/svg-icons';
 
-const Dropdown = ({placeHolder, options, parentElementStateSetter = null}) => {
+const Dropdown = ({placeHolder, options, isSearchable, parentElementStateSetter}) => {
     const [showMenu, setShowMenu] = useState(false);
     const [selectedValue, setSelectedValue] = useState('');
+    const [searchValue, setSearchValue] = useState('');
+    const searchRef = useRef();
+    const inputRef = useRef();
 
     /**
      * Side effect to update the state of the parent component.
      */
     useEffect(() => {
-        parentElementStateSetter(selectedValue.value);
+        //Use selectedValue.value to return value of the key-value pair to the parent state.
+        parentElementStateSetter(selectedValue.key);
     }, [parentElementStateSetter, selectedValue]);
 
     /**
@@ -17,7 +21,11 @@ const Dropdown = ({placeHolder, options, parentElementStateSetter = null}) => {
      * When an area outside of the dropdown menu is clicked, the menu will close.
      */
     useEffect(() => {
-            const handler = () => setShowMenu(false);
+            const handler = (event) => {
+                if (inputRef.current && !inputRef.current.contains(event.target)) {
+                    setShowMenu(false)
+                }
+            };
             window.addEventListener('click', handler);
             return () => {
                 window.removeEventListener('click', handler);
@@ -26,12 +34,19 @@ const Dropdown = ({placeHolder, options, parentElementStateSetter = null}) => {
     );
 
     /**
-     * Hide or show dropdown menu on clicks.
-     *
-     * @param event
+     * Side effect to auto focus the cursor to the search input.
      */
-    const handleInputClick = (event) => {
-        event.stopPropagation();
+    useEffect(() => {
+        setSearchValue('');
+        if (showMenu && searchRef.current) {
+            searchRef.current.focus();
+        }
+    }, [showMenu]);
+
+    /**
+     * Hide or show dropdown menu on clicks.
+     */
+    const handleInputClick = () => {
         setShowMenu(!showMenu);
     };
 
@@ -60,10 +75,38 @@ const Dropdown = ({placeHolder, options, parentElementStateSetter = null}) => {
         return selectedValue.value === option.value;
     };
 
+    /**
+     * Handle search value state.
+     *
+     * @param event
+     */
+    const onSearch = (event) => {
+        setSearchValue(event.target.value);
+    };
+
+    /**
+     * Return search options.
+     *
+     * @returns {*}
+     */
+    const showOptions = () => {
+        if (!searchValue) {
+            return options;
+        }
+        return options.filter((option) => {
+            return option.value.toLowerCase().indexOf(searchValue.toLowerCase()) >= 0; //or === 0 to match from the beginning of search string
+        });
+    };
+
     return (
         <div className='dropdown'>
-            <div onClick={handleInputClick} className={!showMenu ? 'dropdown-input' : 'dropdown-input-active'}>
-                <div className='dropdown-selected-value'>{showSelectedOption()}</div>
+            <div ref={inputRef}
+                 onClick={handleInputClick}
+                 className={!showMenu ? 'dropdown-input' : 'dropdown-input-active'}
+            >
+                <div className='dropdown-selected-value'>
+                    {showSelectedOption()}
+                </div>
                 <div className='dropdown-tools'>
                     <div className='dropdown-tool'>
                         {
@@ -74,13 +117,23 @@ const Dropdown = ({placeHolder, options, parentElementStateSetter = null}) => {
             </div>
             {showMenu && (
                 <div className='dropdown-menu'>
-                    {options.map((option) => (
-                        <div onClick={() => setSelectedValue(option)}
-                             key={option.key}
-                             className={`dropdown-item ${isSelected(option) && "selected"}`}>
-                            {option.value}
-                        </div>
-                    ))}
+                    {
+                        isSearchable && (
+                            <div className='search-box'>
+                                <input onChange={onSearch} value={searchValue} ref={searchRef}/>
+                            </div>
+                        )
+                    }
+                    {
+                        showOptions().map((option) => (
+                            <div onClick={() => setSelectedValue(option)}
+                                 key={option.key}
+                                 className={`dropdown-item ${isSelected(option) && 'selected'}`}
+                            >
+                                {option.value}
+                            </div>
+                        ))
+                    }
                 </div>
             )}
         </div>

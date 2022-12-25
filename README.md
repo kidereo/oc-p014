@@ -22,5 +22,5 @@ Développeur d'application - JavaScript React
 
 ## References
 - Elijah Trillionz: [How To Build An App With React Context API](https://dev.to/elijahtrillionz/how-to-build-an-app-with-react-context-api-512e).
-- Thi Tran: [How to create a Dropdown select component in React](https://medium.com/tinyso/how-to-create-a-dropdown-select-component-in-react-bf85df53e206).
+- Thi Tran: [How to create a Dropdown select component in React](https://medium.com/tinyso/how-to-create-a-dropdown-select-component-in-react-bf85df53e206) with a [CodeSandbox demo](https://codesandbox.io/s/react-custom-dropdown-select-demo-tlrmkv?from-embed=&file=/src/Dropdown.js).
 - Jan Bodnar: [The faker.js tutorial](https://zetcode.com/javascript/fakerjs/).

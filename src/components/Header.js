@@ -17,12 +17,12 @@ const Header = () => {
     };
 
     return (
-        <div className="header">
-            <img src={WealthHealthEmblem} alt="WealthHealth" className="header-emblem"/>
-            <img src={WealthHealthName} alt="WealthHealth" className="header-name"/>
-            <h1 className="header-title">| HRnet</h1>
+        <div className='header'>
+            <img src={WealthHealthEmblem} alt='WealthHealth' className='header-emblem'/>
+            <img src={WealthHealthName} alt='WealthHealth' className='header-name'/>
+            <h1 className='header-title'>| HRnet</h1>
             <button
-                className="header-button"
+                className='header-button'
                 onClick={() => setOpenAddEmployeeModal(!openAddEmployeeModal)}
             >
                 {!openAddEmployeeModal ? "Add Employee" : "Cancel Adding Employee"}

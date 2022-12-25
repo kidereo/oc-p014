@@ -1,5 +1,5 @@
 import {faker} from '@faker-js/faker';
-import departmentList from './departments'
+import departmentList from './departments';
 
 /**
  * Function to randomize departments in the existing file.
@@ -22,6 +22,7 @@ const generateEmployees = (number) => {
         const birthDate = faker.date.birthdate({min: 35, max: 65, mode: 'age'});
         const startDate = faker.date.between((date => date.setFullYear(date.getFullYear() - 10))(new Date()), new Date());
         const department = faker.helpers.arrayElement(departments);
+        const homeState = faker.address.stateAbbr();
 
         employees.push({
             "id": id,
@@ -30,6 +31,7 @@ const generateEmployees = (number) => {
             "birthDate": birthDate,
             "startDate": startDate,
             "department": department,
+            "homeState": homeState,
         });
 
         employees.sort(function (a, b) {
@@ -41,49 +43,5 @@ const generateEmployees = (number) => {
 };
 
 const employees = generateEmployees(15);
-
-/*const employees =
-    [
-        {
-            id: 5,
-            firstName: faker.name.firstName('male'),
-            lastName: faker.name.lastName('male'),
-            birthDate: faker.date.birthdate({min: 35, max: 65, mode: 'age'}),
-            startDate: faker.date.between((date => date.setFullYear(date.getFullYear() - 10))(new Date), new Date()),
-            department: faker.helpers.arrayElement(departments)
-        },
-        {
-            id: 4,
-            firstName: faker.name.firstName('female'),
-            lastName: faker.name.lastName('female'),
-            birthDate: faker.date.birthdate({min: 25, max: 65, mode: 'age'}),
-            startDate: faker.date.between((date => date.setFullYear(date.getFullYear() - 10))(new Date), new Date()),
-            department: faker.helpers.arrayElement(departments)
-        },
-        {
-            id: 3,
-            firstName: faker.name.firstName('male'),
-            lastName: faker.name.lastName('male'),
-            birthDate: faker.date.birthdate({min: 25, max: 65, mode: 'age'}),
-            startDate: faker.date.between((date => date.setFullYear(date.getFullYear() - 10))(new Date), new Date()),
-            department: faker.helpers.arrayElement(departments)
-        },
-        {
-            id: 2,
-            firstName: faker.name.firstName('female'),
-            lastName: faker.name.lastName('female'),
-            birthDate: faker.date.birthdate({min: 25, max: 65, mode: 'age'}),
-            startDate: faker.date.between((date => date.setFullYear(date.getFullYear() - 10))(new Date), new Date()),
-            department: faker.helpers.arrayElement(departments)
-        },
-        {
-            id: 1,
-            firstName: faker.name.firstName('female'),
-            lastName: faker.name.lastName('female'),
-            birthDate: faker.date.birthdate({min: 25, max: 65, mode: 'age'}),
-            startDate: faker.date.between((date => date.setFullYear(date.getFullYear() - 10))(new Date), new Date()),
-            department: faker.helpers.arrayElement(departments)
-        }
-    ];*/
 
 export default employees.data;
