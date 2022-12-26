@@ -1,7 +1,18 @@
 import React, {useState, useEffect, useRef} from 'react';
 import {IconArrowDown, IconArrowUp} from '../assets/svg-icons';
 
-const Dropdown = ({placeHolder, options, isSearchable, parentElementStateSetter}) => {
+/**
+ * Dropdown component.
+ *
+ * @param placeHolder - Dropdown display on initial load.
+ * @param options - 'key-value' array of selectable options.
+ * @param isSearchable - Show search input to type in required values.
+ * @param persistKey - Update component state with key of the 'key-value' pair.
+ * @param parentElementStateSetter - Update state of the parent component.
+ * @returns {*}
+ * @constructor
+ */
+const Dropdown = ({placeHolder, options, isSearchable, persistKey, parentElementStateSetter}) => {
     const [showMenu, setShowMenu] = useState(false);
     const [selectedValue, setSelectedValue] = useState('');
     const [searchValue, setSearchValue] = useState('');
@@ -10,11 +21,11 @@ const Dropdown = ({placeHolder, options, isSearchable, parentElementStateSetter}
 
     /**
      * Side effect to update the state of the parent component.
+     * Can be either key or value of the key-value pair.
      */
     useEffect(() => {
-        //Use selectedValue.value to return value of the key-value pair to the parent state.
-        parentElementStateSetter(selectedValue.key);
-    }, [parentElementStateSetter, selectedValue]);
+        parentElementStateSetter(persistKey ? selectedValue.key : selectedValue.value);
+    }, [parentElementStateSetter, selectedValue, persistKey]);
 
     /**
      * Side effect to set up a window event listener for the dropdown menu.
@@ -57,6 +68,9 @@ const Dropdown = ({placeHolder, options, isSearchable, parentElementStateSetter}
      */
     const showSelectedOption = () => {
         if (selectedValue) {
+            if (persistKey) {
+                return `${selectedValue.value}, ${selectedValue.key}`;
+            }
             return selectedValue.value;
         }
         return placeHolder;
@@ -94,7 +108,8 @@ const Dropdown = ({placeHolder, options, isSearchable, parentElementStateSetter}
             return options;
         }
         return options.filter((option) => {
-            return option.value.toLowerCase().indexOf(searchValue.toLowerCase()) >= 0; //or === 0 to match from the beginning of search string
+            return option.value.toLowerCase().indexOf(searchValue.toLowerCase()) >= 0 ||
+                option.key.toLowerCase().indexOf(searchValue.toLowerCase()) >= 0; //or === 0 to match from the beginning of search string
         });
     };
 
@@ -130,7 +145,7 @@ const Dropdown = ({placeHolder, options, isSearchable, parentElementStateSetter}
                                  key={option.key}
                                  className={`dropdown-item ${isSelected(option) && 'selected'}`}
                             >
-                                {option.value}
+                                {persistKey ? `${option.value}, ${option.key}` : `${option.value}`}
                             </div>
                         ))
                     }

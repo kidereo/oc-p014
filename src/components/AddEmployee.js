@@ -130,6 +130,7 @@ const AddEmployee = ({closeModal}) => {
                     <label htmlFor='state'>State</label>
                     <Dropdown id='department'
                               isSearchable
+                              persistKey
                               parentElementStateSetter={wrapperSetHomeState}
                               placeHolder='Select State'
                               options={stateList}
