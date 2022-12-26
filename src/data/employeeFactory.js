@@ -23,6 +23,7 @@ const generateEmployees = (number) => {
         const startDate = faker.date.between((date => date.setFullYear(date.getFullYear() - 10))(new Date()), new Date());
         const department = faker.helpers.arrayElement(departments);
         const homeState = faker.address.stateAbbr();
+        const zipCode = faker.address.zipCodeByState(homeState);
 
         employees.push({
             "id": id,
@@ -32,6 +33,7 @@ const generateEmployees = (number) => {
             "startDate": startDate,
             "department": department,
             "homeState": homeState,
+            "zipCode": zipCode,
         });
 
         employees.sort(function (a, b) {

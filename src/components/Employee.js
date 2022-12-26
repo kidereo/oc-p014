@@ -13,10 +13,11 @@ import {IconDelete} from '../assets/svg-icons';
  * @param startDate
  * @param department
  * @param homeState
+ * @param zipCode
  * @returns {*}
  * @constructor
  */
-const Employee = ({employee: {id, firstName, lastName, birthDate, startDate, department, homeState}}) => {
+const Employee = ({employee: {id, firstName, lastName, birthDate, startDate, department, homeState, zipCode}}) => {
     const {deleteEmployee} = useContext(AppContext);
 
     const formatDate = (date) => {
@@ -33,10 +34,9 @@ const Employee = ({employee: {id, firstName, lastName, birthDate, startDate, dep
             <td>{department}</td>
             <td>{formatDate(birthDate)}</td>
             <td>{homeState}</td>
+            <td>{zipCode}</td>
             <td>
                 <div>
-                    {/*<i className='fas fa-edit'></i>
-                    <i className='fas fa-trash' onClick={() => deleteEmployee(id)}></i>*/}
                     <div style={{cursor: 'pointer'}} onClick={() => deleteEmployee(id)}>
                         <IconDelete/>
                     </div>

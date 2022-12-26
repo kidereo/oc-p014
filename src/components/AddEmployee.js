@@ -21,6 +21,7 @@ const AddEmployee = ({closeModal}) => {
     const [startDate, setStartDate] = useState(new Date());
     const [department, setDepartment] = useState('');
     const [homeState, setHomeState] = useState('');
+    const [zipCode, setZipCode] = useState('');
     const [error, setError] = useState(false);
 
     /**
@@ -52,11 +53,11 @@ const AddEmployee = ({closeModal}) => {
      */
     const validateInputs = (event) => {
         event.preventDefault();
-        if (!firstName || !lastName || !birthDate || !startDate || !department || !homeState) {
+        if (!firstName || !lastName || !birthDate || !startDate || !department || !homeState || !zipCode) {
             return setError("Please complete all fields!")
         }
         addEmployee(
-            {id, firstName, lastName, birthDate, startDate, department, homeState}
+            {id, firstName, lastName, birthDate, startDate, department, homeState, zipCode}
         );
         console.log(`Employee ${firstName} ${lastName} added successfully.`);
         closeModal();
@@ -134,6 +135,16 @@ const AddEmployee = ({closeModal}) => {
                               parentElementStateSetter={wrapperSetHomeState}
                               placeHolder='Select State'
                               options={stateList}
+                    />
+                </div>
+
+                {/*Zip Code field*/}
+                <div className='add-employee-form-field'>
+                    <label htmlFor='zipCode'>Zip Code</label>
+                    <input type='text'
+                           id='zipCode'
+                           placeholder='Enter Zip Code'
+                           onChange={(event) => setZipCode(event.target.value)}
                     />
                 </div>
 

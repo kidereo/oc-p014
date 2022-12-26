@@ -237,6 +237,11 @@ let data = [
     }
 ];
 
+/**
+ * Remap key-value names to what is used in the app.
+ *
+ * @type {{value: *, key: *}[]}
+ */
 const states = data.map(
     item => {
         return {

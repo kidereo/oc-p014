@@ -27,6 +27,7 @@ const EmployeeList = () => {
                     <th>Department</th>
                     <th>Date of Birth</th>
                     <th>Home State</th>
+                    <th>Zip Code</th>
                     <th>Actions</th>
                 </tr>
                 </thead>
