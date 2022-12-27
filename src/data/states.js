@@ -242,7 +242,7 @@ let data = [
  *
  * @type {{value: *, key: *}[]}
  */
-const states = data.map(
+let states = data.map(
     item => {
         return {
             "key": item.abbreviation,
@@ -250,6 +250,31 @@ const states = data.map(
         }
     }
 );
+
+/**
+ * Sort states by abbreviation.
+ *
+ * @param array
+ * @param key
+ * @returns {*}
+ */
+const sortByKey = (array, key) => {
+    return array.sort(function (a, b) {
+        let x = a[key];
+        let y = b[key];
+
+        if (typeof x == "string") {
+            x = ("" + x).toLowerCase();
+        }
+        if (typeof y == "string") {
+            y = ("" + y).toLowerCase();
+        }
+
+        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+    });
+};
+
+states = sortByKey(states, "key");
 
 export default states;
 

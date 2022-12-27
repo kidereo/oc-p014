@@ -37,7 +37,6 @@ const AddEmployee = ({closeModal}) => {
         setHomeState(value);
     }, [setHomeState]);
 
-
     /**
      * Side effect to increment id to the length of loaded array.
      */
@@ -119,7 +118,6 @@ const AddEmployee = ({closeModal}) => {
                 <div className='add-employee-form-field'>
                     <label htmlFor='department'>Department</label>
                     <Dropdown id='department'
-                              isSearchable
                               parentElementStateSetter={wrapperSetDepartment}
                               placeHolder='Select Department'
                               options={departmentList}

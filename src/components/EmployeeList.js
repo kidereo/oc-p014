@@ -12,6 +12,13 @@ import {AppContext} from '../context/AppState';
 const EmployeeList = () => {
     const {employees} = useContext(AppContext);
 
+    //Start experiment
+    /*const columns = [
+        {field: 'id', headerName: 'User ID'},
+        {field: 'firstName', headerName: 'First Name'},
+    ];*/
+    //End experiment
+
     return (
         <>
             <h2>

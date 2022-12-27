@@ -69,7 +69,7 @@ const Dropdown = ({placeHolder, options, isSearchable, persistKey, parentElement
     const showSelectedOption = () => {
         if (selectedValue) {
             if (persistKey) {
-                return `${selectedValue.value}, ${selectedValue.key}`;
+                return `${selectedValue.key} | ${selectedValue.value}`;
             }
             return selectedValue.value;
         }
@@ -145,7 +145,7 @@ const Dropdown = ({placeHolder, options, isSearchable, persistKey, parentElement
                                  key={option.key}
                                  className={`dropdown-item ${isSelected(option) && 'selected'}`}
                             >
-                                {persistKey ? `${option.value}, ${option.key}` : `${option.value}`}
+                                {persistKey ? `${option.key} | ${option.value}` : `${option.value}`}
                             </div>
                         ))
                     }
