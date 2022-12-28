@@ -122,8 +122,8 @@ const Dropdown = ({placeHolder, options, isSearchable, persistKey, parentElement
                 <div className='dropdown-selected-value'>
                     {showSelectedOption()}
                 </div>
-                <div className='dropdown-tools'>
-                    <div className='dropdown-tool'>
+                <div className='dropdown-icons'>
+                    <div className='dropdown-icons-arrows'>
                         {
                             !showMenu ? <IconArrowDown/> : <IconArrowUp/>
                         }
@@ -134,7 +134,7 @@ const Dropdown = ({placeHolder, options, isSearchable, persistKey, parentElement
                 <div className='dropdown-menu'>
                     {
                         isSearchable && (
-                            <div className='search-box'>
+                            <div className='dropdown-search'>
                                 <input onChange={onSearch} value={searchValue} ref={searchRef}/>
                             </div>
                         )

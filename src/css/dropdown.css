@@ -50,11 +50,11 @@
     color: #fff;
 }
 
-.search-box {
+.dropdown-search {
     padding: 5px;
     background-color: #eee;
 }
-.search-box input {
+.dropdown-search input {
     width: 100%;
     box-sizing: border-box;
     padding: 5px;
