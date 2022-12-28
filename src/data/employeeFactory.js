@@ -2,7 +2,7 @@ import {faker} from '@faker-js/faker';
 import departmentList from './departments';
 
 /**
- * Function to randomize departments in the existing file.
+ * Function to turn departments in the existing file into array.
  */
 const departments = departmentList.map(function (item) {
     return item[Object.keys(item)[1]];
@@ -36,7 +36,7 @@ const generateEmployees = (number) => {
             "zipCode": zipCode,
         });
 
-        employees.sort(function (a, b) {
+        employees.sort((a, b) => {
             return b.id - a.id;
         });
     }
