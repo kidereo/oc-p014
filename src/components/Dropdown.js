@@ -123,7 +123,7 @@ const Dropdown = ({placeHolder, options, isSearchable, persistKey, parentElement
                     {showSelectedOption()}
                 </div>
                 <div className='dropdown-icons'>
-                    <div className='dropdown-icons-arrows'>
+                    <div className='dropdown-icons-arrow'>
                         {
                             !showMenu ? <IconArrowDown/> : <IconArrowUp/>
                         }
