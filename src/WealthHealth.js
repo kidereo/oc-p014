@@ -17,7 +17,7 @@ function WealthHealth() {
             <AppContext.Consumer>
                 {
                     ({employees}) => (
-                        <div className="body-container">
+                        <div className='body-container'>
                             <header>
                                 <Header/>
                             </header>
@@ -28,7 +28,7 @@ function WealthHealth() {
                                 <Footer/>
                             </footer>
                             <ToastContainer
-                                position="bottom-right"
+                                position='bottom-right'
                                 autoClose={2000}
                             />
                         </div>

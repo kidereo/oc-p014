@@ -44,6 +44,6 @@ const generateEmployees = (number) => {
     return {"data": employees}
 };
 
-const employees = generateEmployees(15);
+const employees = generateEmployees(150);
 
 export default employees.data;
