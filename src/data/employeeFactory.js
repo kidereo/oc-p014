@@ -24,6 +24,8 @@ const generateEmployees = (number) => {
         const department = faker.helpers.arrayElement(departments);
         const homeState = faker.address.stateAbbr();
         const zipCode = faker.address.zipCodeByState(homeState);
+        const street = faker.address.streetAddress();
+        const city = faker.address.cityName();
 
         employees.push({
             "id": id,
@@ -34,6 +36,8 @@ const generateEmployees = (number) => {
             "department": department,
             "homeState": homeState,
             "zipCode": zipCode,
+            "street": street,
+            "city": city,
         });
 
         employees.sort((a, b) => {

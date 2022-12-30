@@ -21,6 +21,8 @@ const AddEmployee = ({closeModal}) => {
     const [startDate, setStartDate] = useState(new Date());
     const [department, setDepartment] = useState('');
     const [homeState, setHomeState] = useState('');
+    const [street, setStreet] = useState('');
+    const [city, setCity] = useState('');
     const [zipCode, setZipCode] = useState('');
     const [error, setError] = useState(false);
 
@@ -52,11 +54,11 @@ const AddEmployee = ({closeModal}) => {
      */
     const validateInputs = (event) => {
         event.preventDefault();
-        if (!firstName || !lastName || !birthDate || !startDate || !department || !homeState || !zipCode) {
+        if (!firstName || !lastName || !birthDate || !startDate || !department || !homeState || !street || !city || !zipCode) {
             return setError("Please complete all fields!")
         }
         addEmployee(
-            {id, firstName, lastName, birthDate, startDate, department, homeState, zipCode}
+            {id, firstName, lastName, birthDate, startDate, department, homeState, street, city, zipCode}
         );
         console.log(`Employee ${firstName} ${lastName} added successfully.`);
         closeModal();
@@ -136,6 +138,26 @@ const AddEmployee = ({closeModal}) => {
                     />
                 </div>
 
+                {/*Street field*/}
+                <div className='add-employee-form-field'>
+                    <label htmlFor='street'>Street</label>
+                    <input type='text'
+                           id='street'
+                           placeholder='Enter Street'
+                           onChange={(event) => setStreet(event.target.value)}
+                    />
+                </div>
+
+                {/*City field*/}
+                <div className='add-employee-form-field'>
+                    <label htmlFor='street'>City</label>
+                    <input type='text'
+                           id='city'
+                           placeholder='Enter City'
+                           onChange={(event) => setCity(event.target.value)}
+                    />
+                </div>
+
                 {/*Zip Code field*/}
                 <div className='add-employee-form-field'>
                     <label htmlFor='zipCode'>Zip Code</label>
@@ -175,7 +197,7 @@ const AddEmployee = ({closeModal}) => {
 
                 {/*Error area*/}
                 {
-                    error && <p className='error'>{error}</p>
+                    error && <p className='add-employee-form-error'>{error}</p>
                 }
             </form>
         </div>
