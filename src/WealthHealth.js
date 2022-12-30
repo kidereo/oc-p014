@@ -29,7 +29,7 @@ function WealthHealth() {
                             </footer>
                             <ToastContainer
                                 position='bottom-right'
-                                autoClose={2000}
+                                autoClose={1000}
                             />
                         </div>
                     )

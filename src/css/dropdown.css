@@ -2,26 +2,26 @@
     text-align: left;
     border: 1px solid #ccc;
     position: relative;
-    border-radius: 5px;
+    border-radius: 25px;
 }
 
 .dropdown-input {
-    padding: 14px 10px;
+    padding: 14px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     user-select: none;
-    border-radius: 5px;
+    border-radius: 25px;
 }
 
 .dropdown-input-active {
-    padding: 14px 10px;
+    padding: 14px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     user-select: none;
     outline: 2px solid rgb(90, 111, 7);
-    border-radius: 5px;
+    border-radius: 25px;
 }
 
 .dropdown-menu {
@@ -36,7 +36,7 @@
 }
 
 .dropdown-item {
-    padding: 10px;
+    padding: 10px 20px;
     cursor: pointer;
 }
 
@@ -57,8 +57,8 @@
 .dropdown-search input {
     width: 100%;
     box-sizing: border-box;
-    padding: 5px;
+    padding: 10px 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 25px;
 }
 

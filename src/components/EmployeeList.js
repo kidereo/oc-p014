@@ -3,7 +3,7 @@ import {useContext, useState} from 'react';
 import StripedDataGrid from './StripedDataGrid';
 import {AppContext} from '../context/AppState';
 import {GridActionsCellItem} from '@mui/x-data-grid';
-import DeleteIcon from '@mui/icons-material/Delete';
+import DeleteForeverOutlinedIcon from '@mui/icons-material/DeleteForeverOutlined';
 
 /**
  * Create a collection of employees as a striped data grid.
@@ -34,7 +34,7 @@ const EmployeeList = () => {
             getActions: ({id}) => {
                 return [
                     <GridActionsCellItem
-                        icon={<DeleteIcon/>}
+                        icon={<DeleteForeverOutlinedIcon/>}
                         label="Delete"
                         onClick={() => deleteEmployee(id)}
                         color="error"

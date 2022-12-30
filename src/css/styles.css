@@ -20,7 +20,7 @@ main { padding: 0 20px; }
 
 .add-employee-form-field label { display: flex; flex-direction: column; margin-bottom: 5px; font-size: small; font-weight: 400; }
 
-.add-employee-form-field input { width: 300px; padding: 14px 10px; border: 1px solid #ccc; border-radius: 5px; }
+.add-employee-form-field input { width: 300px; padding: 14px 20px; border: 1px solid #ccc; border-radius: 25px; }
 
 .add-employee-form-field input:focus { outline: 2px solid #5a6f07; }
 
@@ -28,7 +28,7 @@ main { padding: 0 20px; }
 
 .add-employee-form-error { color: #d3302f; font-weight: 500; margin: 0; padding: 0; }
 
-.add-employee-button_submit { padding: 10px 20px 10px 20px; min-width: 150px; background-color: #6d8512; border: 2px solid #3e5800; border-radius: 25px; text-transform: uppercase; color: white; font-weight: bold; cursor: pointer; }
+.add-employee-button_submit { padding: 10px 20px; min-width: 150px; background-color: #6d8512; border: 2px solid #3e5800; border-radius: 25px; text-transform: uppercase; color: white; font-weight: bold; cursor: pointer; }
 
 .add-employee-button_submit:hover { background-color: #3e5800; filter: drop-shadow(0 0 6px darkgray); }
 

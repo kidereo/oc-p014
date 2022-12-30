@@ -6,11 +6,12 @@ Développeur d'application - JavaScript React
 
 ## Main packages
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-- Font: [Roboto Flex](https://fonts.google.com/specimen/Roboto+Flex) from [Google Fonts](https://fonts.google.com/). 
+- Font: [Roboto](https://fonts.google.com/specimen/Roboto) from [Google Fonts](https://fonts.google.com/). 
 - Routing by [React Router](https://reactrouter.com/en/main).
 - Typechecking with [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html).
 - Fake (but realistic) data by [Faker](https://fakerjs.dev/).
-- Icons from [Mingcute Tiny Bold Line Icons Collection](https://www.svgrepo.com/collection/mingcute-tiny-bold-line-icons/).
+- Dropdown icons from [Mingcute Tiny Bold Line Icons Collection](https://www.svgrepo.com/collection/mingcute-tiny-bold-line-icons/).
+- DataGrid icons from [MUI Material Icons](https://mui.com/material-ui/material-icons/).
 
 ## jQuery replacement components
 - Datepicker: [React Datepicker](https://reactdatepicker.com/) - A simple and reusable datepicker component for React.
