@@ -1,4 +1,3 @@
-import React from 'react';
 import {DataGrid, gridClasses} from '@mui/x-data-grid';
 import {alpha, styled} from '@mui/material/styles';
 

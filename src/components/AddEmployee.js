@@ -4,6 +4,9 @@ import departmentList from '../data/departments';
 import stateList from '../data/states';
 import DatePicker from 'react-datepicker';
 import Dropdown from './Dropdown';
+import ArrowDropDownOutlinedIcon from '@mui/icons-material/ArrowDropDownOutlined';
+import ArrowDropUpOutlinedIcon from '@mui/icons-material/ArrowDropUpOutlined';
+
 
 /**
  * Add a new employee.
@@ -123,18 +126,22 @@ const AddEmployee = ({closeModal}) => {
                               parentElementStateSetter={wrapperSetDepartment}
                               placeHolder='Select Department'
                               options={departmentList}
+                              customisedArrowDown={<ArrowDropDownOutlinedIcon/>}
+                              customisedArrowUp={<ArrowDropUpOutlinedIcon/>}
                     />
                 </div>
 
                 {/*State dropdown component*/}
                 <div className='add-employee-form-field'>
                     <label htmlFor='state'>State</label>
-                    <Dropdown id='department'
+                    <Dropdown id='state'
                               isSearchable
                               persistKey
                               parentElementStateSetter={wrapperSetHomeState}
                               placeHolder='Select State'
                               options={stateList}
+                              customisedArrowDown={<ArrowDropDownOutlinedIcon/>}
+                              customisedArrowUp={<ArrowDropUpOutlinedIcon/>}
                     />
                 </div>
 

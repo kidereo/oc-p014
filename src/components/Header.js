@@ -1,6 +1,6 @@
 import React from 'react';
 import {useState} from 'react';
-import WealthHealthName from '../assets/wealth-health.jpg'
+//import WealthHealthName from '../assets/wealth-health.jpg'
 import WealthHealthEmblem from '../assets/wealth-health-emblem.jpg'
 import AddEmployee from './AddEmployee';
 
