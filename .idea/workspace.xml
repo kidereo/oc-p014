@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ae25b4dc-48ca-4efd-8e92-54b7002ff324" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddEmployee.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddEmployee.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dropdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StripedDataGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StripedDataGrid.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Dropdown.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1807">
-              <caret line="183" column="79" lean-forward="true" selection-start-line="183" selection-start-column="79" selection-end-line="183" selection-end-column="79" />
+            <state relative-caret-position="5724">
+              <caret line="212" column="14" selection-start-line="212" selection-start-column="14" selection-end-line="212" selection-end-column="14" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
               </folding>
@@ -68,13 +67,47 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/AddEmployee.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="694">
-              <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
+            <state relative-caret-position="443">
+              <caret line="130" column="22" lean-forward="true" selection-start-line="130" selection-start-column="22" selection-end-line="130" selection-end-column="22" />
               <folding>
                 <element signature="e#0#74#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/StripedDataGrid.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+              <folding>
+                <element signature="e#1#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scss/01_utils/_variables.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Header.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="28">
+              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#120#187#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,7 +147,6 @@
         <option value="$PROJECT_DIR$/src/scss/04_components/_footer.scss" />
         <option value="$PROJECT_DIR$/src/components/Footer.js" />
         <option value="$PROJECT_DIR$/src/scss/styles.scss" />
-        <option value="$PROJECT_DIR$/src/components/StripedDataGrid.js" />
         <option value="$PROJECT_DIR$/src/scss/04_components/_employee-list.scss" />
         <option value="$PROJECT_DIR$/src/scss/03_base/_body-container.scss" />
         <option value="$PROJECT_DIR$/src/scss/04_components/_header.scss" />
@@ -125,13 +157,14 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/scss/04_components/_add-employee.scss" />
         <option value="$PROJECT_DIR$/src/components/EmployeeList.js" />
-        <option value="$PROJECT_DIR$/src/components/Header.js" />
         <option value="$PROJECT_DIR$/src/data/employeeFactory.js" />
         <option value="$PROJECT_DIR$/src/WealthHealth.js" />
         <option value="$PROJECT_DIR$/src/context/AppState.js" />
         <option value="$PROJECT_DIR$/src/assets/svg-icons.js" />
-        <option value="$PROJECT_DIR$/src/components/Dropdown.js" />
         <option value="$PROJECT_DIR$/src/components/AddEmployee.js" />
+        <option value="$PROJECT_DIR$/src/components/Header.js" />
+        <option value="$PROJECT_DIR$/src/components/Dropdown.js" />
+        <option value="$PROJECT_DIR$/src/components/StripedDataGrid.js" />
       </list>
     </option>
   </component>
@@ -292,7 +325,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671200883600</updated>
       <workItem from="1671200887625" duration="32000" />
-      <workItem from="1671201080508" duration="171394000" />
+      <workItem from="1671201080508" duration="173365000" />
     </task>
     <task id="LOCAL-00001" summary="Initial component setup.">
       <created>1671396331147</created>
@@ -497,23 +530,37 @@
       <option name="project" value="LOCAL" />
       <updated>1672421783642</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Dropdown now accepts custom up/down arrows.">
+      <created>1672682099443</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1672682099443</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Dropdown now accepts custom up/down arrows.">
+      <created>1672682887986</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1672682887986</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171426000" />
+    <option name="totallyTimeSpent" value="173397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1333" height="1283" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24244772" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24244772" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960412" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32960412" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32960412" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -533,7 +580,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Rudimentary form validation." />
     <MESSAGE value="Added footer." />
     <MESSAGE value="Refactored some code." />
     <MESSAGE value="Implemented React Context." />
@@ -558,7 +604,8 @@
     <MESSAGE value="Added MUI DataGrid." />
     <MESSAGE value="Added all DataGrid columns." />
     <MESSAGE value="Cleaned up some code." />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up some code." />
+    <MESSAGE value="Dropdown now accepts custom up/down arrows." />
+    <option name="LAST_COMMIT_MESSAGE" value="Dropdown now accepts custom up/down arrows." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/manifest.json">
@@ -725,23 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/01_utils/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/StripedDataGrid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -774,16 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="31" column="39" lean-forward="true" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -856,22 +876,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Dropdown.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Header.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1807">
-          <caret line="183" column="79" lean-forward="true" selection-start-line="183" selection-start-column="79" selection-end-line="183" selection-end-column="79" />
+        <state relative-caret-position="28">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
           <folding>
-            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#120#187#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/AddEmployee.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
+        <state relative-caret-position="443">
+          <caret line="130" column="22" lean-forward="true" selection-start-line="130" selection-start-column="22" selection-end-line="130" selection-end-column="22" />
           <folding>
             <element signature="e#0#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Dropdown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5724">
+          <caret line="212" column="14" selection-start-line="212" selection-start-column="14" selection-end-line="212" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/01_utils/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/StripedDataGrid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+          <folding>
+            <element signature="e#1#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
