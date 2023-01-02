@@ -1,9 +1,9 @@
 .body-container {
+  max-width: 1400px;
   //max-width: $breakpoint-desktop;
-  width: 100%;
+  //width: 100%;
   min-height: 700px;
   margin: 0 auto 0 auto;
   background-color: white;
-  border-radius: 5px;
   filter: drop-shadow(0 0 6px darkgray);
 }
