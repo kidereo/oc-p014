@@ -6,7 +6,7 @@
 }
 
 .dropdown-input {
-    padding: 14px 20px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,7 +15,7 @@
 }
 
 .dropdown-input-active {
-    padding: 14px 20px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
