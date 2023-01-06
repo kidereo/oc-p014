@@ -61,14 +61,14 @@ const IconArrowUp = () => {
  * @param isSearchable - Show search input to type in required values.
  * @param persistKey - Update component state with key of the 'key-value' pair.
  * @param parentElementStateSetter - Update state of the parent component.
- * @param customisedArrowUp - Customised up-arrow passed in as a React component.
- * @param customisedArrowDown - Customised down-arrow passed in as a React component.
+ * @param arrowUp - Customised up-arrow passed in as a React component.
+ * @param arrowDown - Customised down-arrow passed in as a React component.
  * @returns {*}
  * @constructor
  */
 const Dropdown = ({
                       placeHolder, options, isSearchable, persistKey, parentElementStateSetter,
-                      customisedArrowUp = <IconArrowUp/>, customisedArrowDown = <IconArrowDown/>
+                      arrowUp = <IconArrowUp/>, arrowDown = <IconArrowDown/>
                   }) => {
     const [showMenu, setShowMenu] = useState(false);
     const [selectedValue, setSelectedValue] = useState('');
@@ -182,7 +182,7 @@ const Dropdown = ({
                 <div className='dropdown-icons'>
                     <div className='dropdown-icons-arrow'>
                         {
-                            !showMenu ? customisedArrowDown : customisedArrowUp
+                            !showMenu ? arrowDown : arrowUp
                         }
                     </div>
                 </div>

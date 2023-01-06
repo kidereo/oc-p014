@@ -126,8 +126,8 @@ const AddEmployee = ({closeModal}) => {
                               parentElementStateSetter={wrapperSetDepartment}
                               placeHolder='Select Department'
                               options={departmentList}
-                              customisedArrowDown={<ArrowDropDownOutlinedIcon/>}
-                              customisedArrowUp={<ArrowDropUpOutlinedIcon/>}
+                              arrowDown={<ArrowDropDownOutlinedIcon/>}
+                              arrowUp={<ArrowDropUpOutlinedIcon/>}
                     />
                 </div>
 
@@ -140,8 +140,8 @@ const AddEmployee = ({closeModal}) => {
                               parentElementStateSetter={wrapperSetHomeState}
                               placeHolder='Select State'
                               options={stateList}
-                              customisedArrowDown={<ArrowDropDownOutlinedIcon/>}
-                              customisedArrowUp={<ArrowDropUpOutlinedIcon/>}
+                              arrowDown={<ArrowDropDownOutlinedIcon/>}
+                              arrowUp={<ArrowDropUpOutlinedIcon/>}
                     />
                 </div>
 

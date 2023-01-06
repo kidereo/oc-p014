@@ -10,7 +10,7 @@ Développeur d'application - JavaScript React
 - Routing by [React Router](https://reactrouter.com/en/main).
 - Typechecking with [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html).
 - Fake (but realistic) data by [Faker](https://fakerjs.dev/).
-- Dropdown icons from [Mingcute Tiny Bold Line Icons Collection](https://www.svgrepo.com/collection/mingcute-tiny-bold-line-icons/).
+- Default dropdown icons from [Mingcute Tiny Bold Line Icons Collection](https://www.svgrepo.com/collection/mingcute-tiny-bold-line-icons/).
 - DataGrid icons from [MUI Material Icons](https://mui.com/material-ui/material-icons/).
 
 ## jQuery replacement components
