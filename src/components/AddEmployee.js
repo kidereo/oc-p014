@@ -3,7 +3,8 @@ import {AppContext} from '../context/AppState';
 import departmentList from '../data/departments';
 import stateList from '../data/states';
 import DatePicker from 'react-datepicker';
-import Dropdown from './Dropdown';
+//import Dropdown from './Dropdown';
+import {Dropdown} from 'react-searchable-dropdown-component';
 import ArrowDropDownOutlinedIcon from '@mui/icons-material/ArrowDropDownOutlined';
 import ArrowDropUpOutlinedIcon from '@mui/icons-material/ArrowDropUpOutlined';
 
