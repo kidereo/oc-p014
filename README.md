@@ -17,7 +17,7 @@ Développeur d'application - JavaScript React
 - Datepicker: [React Datepicker](https://reactdatepicker.com/) - A simple and reusable datepicker component for React.
 - Modal dialog: [React-Toastify](https://fkhadra.github.io/react-toastify/introduction) - Easy to set up toast modals for React.
 - Employee table: [MUI DataGrid](https://mui.com/x/react-data-grid/) - A fast and extendable react data table and react data grid.
-- Dropdown: [React Searchable Dropdown Component](https://www.npmjs.com/package/react-searchable-dropdown-component) - A component to enable you to add a searchable dropdown selector to your React application.
+- Dropdown: [React Searchable Dropdown Component](https://www.npmjs.com/package/react-searchable-dropdown-component) - A searchable dropdown component for your React application.
 
 ## Prerequisites
 - [NodeJS](https://nodejs.org/en/).
