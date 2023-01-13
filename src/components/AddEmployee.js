@@ -12,7 +12,6 @@ import {Link, useNavigate} from "react-router-dom";
 /**
  * Add a new employee.
  *
- * @param closeModal
  * @returns {*}
  * @constructor
  */

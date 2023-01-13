@@ -8,7 +8,6 @@ Développeur d'application - JavaScript React
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 - Font: [Roboto](https://fonts.google.com/specimen/Roboto) from [Google Fonts](https://fonts.google.com/). 
 - Routing by [React Router](https://reactrouter.com/en/main).
-- Typechecking with [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html).
 - Fake (but realistic) data by [Faker](https://fakerjs.dev/).
 - Default dropdown icons from [Mingcute Tiny Bold Line Icons Collection](https://www.svgrepo.com/collection/mingcute-tiny-bold-line-icons/).
 - DataGrid icons from [MUI Material Icons](https://mui.com/material-ui/material-icons/).
@@ -22,6 +21,11 @@ Développeur d'application - JavaScript React
 ## Prerequisites
 - [NodeJS](https://nodejs.org/en/).
 - [npm](https://www.npmjs.com/).
+
+## Demo
+This project is deployed using [netlify](https://www.netlify.com/) and can be accessed at https://oc-wealth-health.netlify.app.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/536145b5-c6cc-4881-81c5-1b4b916dcf9e/deploy-status)](https://app.netlify.com/sites/oc-wealth-health/deploys)
 
 ## References
 - Elijah Trillionz: [How To Build An App With React Context API](https://dev.to/elijahtrillionz/how-to-build-an-app-with-react-context-api-512e).
