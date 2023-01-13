@@ -4,7 +4,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     position: fixed;
-    top: 35%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
@@ -62,6 +62,22 @@
 
     &:hover {
       background-color: $dark-green;
+      filter: drop-shadow(0 0 6px darkgray);
+    }
+  }
+
+  &-button_cancel {
+    padding: 10px 20px;
+    min-width: 300px;
+    background-color: white;
+    border: 1px solid $medium-green;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: $medium-green;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
       filter: drop-shadow(0 0 6px darkgray);
     }
   }

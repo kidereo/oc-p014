@@ -7,7 +7,7 @@ import DatePicker from 'react-datepicker';
 import {Dropdown} from 'react-searchable-dropdown-component';
 import ArrowDropDownOutlinedIcon from '@mui/icons-material/ArrowDropDownOutlined';
 import ArrowDropUpOutlinedIcon from '@mui/icons-material/ArrowDropUpOutlined';
-
+import {Link, useNavigate} from "react-router-dom";
 
 /**
  * Add a new employee.
@@ -16,7 +16,7 @@ import ArrowDropUpOutlinedIcon from '@mui/icons-material/ArrowDropUpOutlined';
  * @returns {*}
  * @constructor
  */
-const AddEmployee = ({closeModal}) => {
+const AddEmployee = () => {
     const {addEmployee, id, incrementId} = useContext(AppContext);
     //const id = employees.length + 1;
     const [firstName, setFirstName] = useState('');
@@ -29,6 +29,8 @@ const AddEmployee = ({closeModal}) => {
     const [city, setCity] = useState('');
     const [zipCode, setZipCode] = useState('');
     const [error, setError] = useState(false);
+
+    const navigate = useNavigate();
 
     /**
      * Wrappers to pass component states around.
@@ -65,7 +67,7 @@ const AddEmployee = ({closeModal}) => {
             {id, firstName, lastName, birthDate, startDate, department, homeState, street, city, zipCode}
         );
         console.log(`Employee ${firstName} ${lastName} added successfully.`);
-        closeModal();
+        navigate('/');
     };
 
     return (
@@ -176,25 +178,6 @@ const AddEmployee = ({closeModal}) => {
                     />
                 </div>
 
-                {/*Department field styled as HTML <select>*/}
-                {/*<div className="add-employee-form-field">
-                    <label htmlFor="department">Department</label>
-                    <select className="add-employee-form-field-selector"
-                            id="department"
-                            value={department}
-                            onChange={(event) => setDepartment(event.target.value)}
-                    >
-                        <option>{department}</option>
-                        {departmentList.map((item, index) => {
-                            return (
-                                <option key={index} value={item.value}>
-                                    {item.value}
-                                </option>
-                            )
-                        })}
-                    </select>
-                </div>*/}
-
                 {/*Submit button*/}
                 <button
                     className='add-employee-button_submit'
@@ -202,6 +185,13 @@ const AddEmployee = ({closeModal}) => {
                 >
                     Add employee
                 </button>
+
+                {/*Cancel button*/}
+                <Link to="/">
+                    <button className='add-employee-button_cancel'>
+                        Cancel adding employee
+                    </button>
+                </Link>
 
                 {/*Error area*/}
                 {

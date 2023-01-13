@@ -1,9 +1,11 @@
 import React from 'react';
 import Header from './components/Header';
-import EmployeeList from './components/EmployeeList'
-import Footer from './components/Footer'
+import EmployeeList from './components/EmployeeList';
+import AddEmployee from './components/AddEmployee';
+import Footer from './components/Footer';
 import {AppProvider, AppContext} from "./context/AppState";
 import {ToastContainer} from 'react-toastify';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 /**
  * Top app tree.
@@ -18,19 +20,24 @@ function WealthHealth() {
                 {
                     ({employees}) => (
                         <div className='body-container'>
-                            <header>
-                                <Header/>
-                            </header>
-                            <main>
-                                <EmployeeList/>
-                            </main>
-                            <footer>
-                                <Footer/>
-                            </footer>
-                            <ToastContainer
-                                position='bottom-right'
-                                autoClose={1000}
-                            />
+                            <BrowserRouter>
+                                <header>
+                                    <Header/>
+                                </header>
+                                <main>
+                                    <Routes>
+                                        <Route index element={<EmployeeList/>}/>
+                                        <Route path="/add-employee" element={<AddEmployee/>}/>
+                                    </Routes>
+                                </main>
+                                <footer>
+                                    <Footer/>
+                                </footer>
+                                <ToastContainer
+                                    position='bottom-right'
+                                    autoClose={1000}
+                                />
+                            </BrowserRouter>
                         </div>
                     )
                 }

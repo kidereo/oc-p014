@@ -8,6 +8,11 @@
   background-color: $medium-green;
   border-radius: 5px 5px 0 0;
 
+  &-nav {
+    display: flex;
+    text-decoration: none;
+  }
+
   &-emblem {
     height: 40px;
     border-radius: 50%;
@@ -32,6 +37,11 @@
     cursor: pointer;
     position: fixed;
     right: 20px;
+    top: 20px;
+
+    &_active {
+      display: none;
+    }
 
     &:hover {
       background-color: $dark-green;
