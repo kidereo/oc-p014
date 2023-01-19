@@ -3,8 +3,8 @@ import {AppContext} from '../context/AppState';
 import departmentList from '../data/departments';
 import stateList from '../data/states';
 import DatePicker from 'react-datepicker';
-//import Dropdown from './Dropdown'; //This import is replaced with a home made npm component
-import {Dropdown} from 'react-searchable-dropdown-component';
+//import Dropdown from './Dropdown'; //This import is replaced with a npm component
+import {Dropdown} from 'react-app-searchable-dropdown-component';
 import ArrowDropDownOutlinedIcon from '@mui/icons-material/ArrowDropDownOutlined';
 import ArrowDropUpOutlinedIcon from '@mui/icons-material/ArrowDropUpOutlined';
 import {Link, useNavigate} from "react-router-dom";
