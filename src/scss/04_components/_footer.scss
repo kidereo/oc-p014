@@ -10,4 +10,11 @@
   position: fixed;
   bottom: -50px;
   width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: $breakpoint-mobile) {
+  .footer {
+    font-size: smaller;
+  }
 }

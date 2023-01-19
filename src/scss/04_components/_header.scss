@@ -1,7 +1,6 @@
 .header {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
   padding: 20px 10px 20px 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   margin-bottom: 50px;
@@ -11,6 +10,7 @@
   &-nav {
     display: flex;
     text-decoration: none;
+    align-items: center;
   }
 
   &-emblem {
@@ -27,7 +27,7 @@
 
   &-button {
     padding: 10px 20px 10px 20px;
-    min-width: 300px;
+    min-width: 200px;
     background-color: transparent;
     border: 2px solid white;
     border-radius: 25px;
@@ -46,6 +46,28 @@
     &:hover {
       background-color: $dark-green;
       filter: drop-shadow(0 0 6px darkgray);
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-mobile) {
+  .header {
+
+    h1 {
+      font-size: x-large;
+    }
+
+    &-emblem {
+      height: 30px;
+    }
+
+    &-button {
+      min-width: 40px;
+      padding: 5px 0 5px 0;
+      font-weight: bold;
+      font-size: x-large;
+      right: 15px;
+      top: 15px;
     }
   }
 }

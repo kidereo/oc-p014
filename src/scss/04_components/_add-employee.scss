@@ -83,6 +83,18 @@
   }
 }
 
+@media only screen and (max-width: $breakpoint-mobile) {
+  .add-employee {
+    &-form {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 80%;
+    }
+  }
+}
+
+
 
 
 

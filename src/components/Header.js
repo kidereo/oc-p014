@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {NavLink} from 'react-router-dom';
 import WealthHealthEmblem from '../assets/wealth-health-emblem.jpg'
 
@@ -9,6 +9,25 @@ import WealthHealthEmblem from '../assets/wealth-health-emblem.jpg'
  * @constructor
  */
 const Header = () => {
+
+    /**
+     * Capture window dimensions on load and resize.
+     */
+    const [size, setSize] = useState({
+        width: 0,
+        height: 0
+    });
+
+    const updateSize = () =>
+        setSize({
+            width: window.innerWidth,
+            height: window.innerHeight
+        });
+
+    useEffect(() => (window.onresize = updateSize), []);
+
+    const breakpointMobile = 415;
+
     return (
         <div className='header'>
             <NavLink to="/" className="header-nav">
@@ -18,7 +37,7 @@ const Header = () => {
             <NavLink to="/add-employee"
                      className={({isActive}) => isActive ? 'header-button_active' : 'header-button_inactive'}>
                 <button className='header-button'>
-                    Add Employee
+                    {(size.width > breakpointMobile) ? `Add Employee` : `+`}
                 </button>
             </NavLink>
         </div>
