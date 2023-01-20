@@ -48,6 +48,6 @@ const generateEmployees = (number) => {
     return {"data": employees}
 };
 
-const employees = generateEmployees(1);
+const employees = generateEmployees(100);
 
 export default employees.data;
