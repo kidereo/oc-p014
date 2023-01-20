@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {lazy, Suspense} from 'react';
 import {useContext, useState} from 'react';
-import StripedDataGrid from './StripedDataGrid';
+//import StripedDataGrid from './StripedDataGrid'; //Direct import will decrease Lighthouse performance score
 import {AppContext} from '../context/AppState';
 import {GridActionsCellItem} from '@mui/x-data-grid';
-import DeleteForeverOutlinedIcon from '@mui/icons-material/DeleteForeverOutlined';
+
+//Lazy loading will improve Lighthouse 'Eliminate render-blocking resources' metric.
+const StripedDataGrid = lazy(() => import('./StripedDataGrid'));
+const DeleteForeverOutlinedIcon = lazy(() => import('@mui/icons-material/DeleteForeverOutlined'));
+const renderLoader = () => <p>Please wait while the data is loading...</p>;
 
 /**
  * Create a collection of employees as a striped data grid.
@@ -46,25 +50,27 @@ const EmployeeList = () => {
 
     return (
         <div className="employee-list">
+            <Suspense fallback={renderLoader()}>
 
-            <h2>
-                TOTAL EMPLOYEES: {employees.length}
-            </h2>
+                <h2>
+                    TOTAL EMPLOYEES: {employees.length}
+                </h2>
 
-            <div className="employee-list-grid">
-                <StripedDataGrid
-                    rows={employees}
-                    columns={columns}
-                    density={'standard'}
-                    getRowClassName={(params) =>
-                        params.indexRelativeToCurrentPage % 2 === 0 ? 'even' : 'odd'
-                    }
-                    pageSize={pageSize}
-                    rowsPerPageOptions={[5, 10, 25, 50, 100]}
-                    onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
-                />
-            </div>
+                <div className="employee-list-grid">
+                    <StripedDataGrid
+                        rows={employees}
+                        columns={columns}
+                        density={'standard'}
+                        getRowClassName={(params) =>
+                            params.indexRelativeToCurrentPage % 2 === 0 ? 'even' : 'odd'
+                        }
+                        pageSize={pageSize}
+                        rowsPerPageOptions={[5, 10, 25, 50, 100]}
+                        onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
+                    />
+                </div>
 
+            </Suspense>
         </div>
     )
 };
