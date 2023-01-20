@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae25b4dc-48ca-4efd-8e92-54b7002ff324" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/wealth-health-emblem-60.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/employeeFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/employeeFactory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/01_utils/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/01_utils/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/04_components/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/04_components/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/04_components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/04_components/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WealthHealth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/WealthHealth.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +12,58 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/AddEmployee.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1898">
+              <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="79" />
+              <folding>
+                <element signature="e#0#90#0" expanded="true" />
+                <element signature="e#275#340#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WealthHealth.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/data/employeeFactory.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="489">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/EmployeeList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1107">
+              <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+                <element signature="e#199#246#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,29 +101,29 @@
         <option value="$PROJECT_DIR$/src/assets/svg-icons.js" />
         <option value="$PROJECT_DIR$/src/components/StripedDataGrid.js" />
         <option value="$PROJECT_DIR$/src/css/dropdown.css" />
-        <option value="$PROJECT_DIR$/src/components/EmployeeList.js" />
         <option value="$PROJECT_DIR$/src/scss/03_base/_body-container.scss" />
         <option value="$PROJECT_DIR$/src/scss/04_components/_employee-list.scss" />
         <option value="$PROJECT_DIR$/src/components/Dropdown.js" />
         <option value="$PROJECT_DIR$/babel.config.js" />
         <option value="$PROJECT_DIR$/babel.config.json" />
         <option value="$PROJECT_DIR$/node_modules/react-scripts/config/webpack.config.js" />
-        <option value="$PROJECT_DIR$/src/WealthHealth.js" />
-        <option value="$PROJECT_DIR$/src/components/AddEmployee.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/scss/04_components/_add-employee.scss" />
         <option value="$PROJECT_DIR$/src/scss/01_utils/_variables.scss" />
-        <option value="$PROJECT_DIR$/src/data/employeeFactory.js" />
         <option value="$PROJECT_DIR$/src/scss/04_components/_header.scss" />
         <option value="$PROJECT_DIR$/src/scss/04_components/_footer.scss" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/Header.js" />
+        <option value="$PROJECT_DIR$/src/scss/04_components/_add-employee.scss" />
+        <option value="$PROJECT_DIR$/src/components/EmployeeList.js" />
+        <option value="$PROJECT_DIR$/src/components/AddEmployee.js" />
+        <option value="$PROJECT_DIR$/src/WealthHealth.js" />
+        <option value="$PROJECT_DIR$/src/data/employeeFactory.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="15" />
-    <option name="y" value="28" />
+    <option name="y" value="27" />
     <option name="width" value="1333" />
     <option name="height" value="1283" />
   </component>
@@ -229,7 +273,7 @@
       <updated>1671200883600</updated>
       <workItem from="1671200887625" duration="32000" />
       <workItem from="1671201080508" duration="199518000" />
-      <workItem from="1673275824834" duration="35700000" />
+      <workItem from="1673275824834" duration="44511000" />
     </task>
     <task id="LOCAL-00001" summary="Initial component setup.">
       <created>1671396331147</created>
@@ -532,16 +576,31 @@
       <option name="project" value="LOCAL" />
       <updated>1674144899240</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Lighthouse accessibility improvements.">
+      <created>1674214979083</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1674214979083</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Lighthouse performance improvements.">
+      <created>1674221666921</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1674221666921</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="235250000" />
+    <option name="totallyTimeSpent" value="244061000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="15" y="28" width="1333" height="1283" extended-state="0" />
+    <frame x="15" y="27" width="1333" height="1283" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24632068" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24632068" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -556,7 +615,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32960412" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5011619" side_tool="true" weight="0.32960412" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4988381" visible="true" weight="0.32960412" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4988381" visible="true" weight="0.32960412" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -567,8 +626,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactored icons." />
-    <MESSAGE value="WIP - Dropdown." />
     <MESSAGE value="WIP - Dropdown (state connect)." />
     <MESSAGE value="Dropdown component for address." />
     <MESSAGE value="Add the list of US states and refactor State dropdown." />
@@ -592,7 +649,9 @@
     <MESSAGE value="App deployed to netlify." />
     <MESSAGE value="[1] Replaced dropdown component with a later version equivalent. [2] Changed readme to reflect component substitution." />
     <MESSAGE value="Added responsive design." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added responsive design." />
+    <MESSAGE value="Lighthouse accessibility improvements." />
+    <MESSAGE value="Lighthouse performance improvements." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lighthouse performance improvements." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/App.css" />
@@ -713,13 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/states.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1096">
-          <caret line="194" column="21" selection-start-line="194" selection-start-column="21" selection-end-line="194" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/dropdown.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -741,13 +793,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@mui/x-data-grid/index.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/departments.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/svg-icons.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -773,36 +818,6 @@
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4514" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/context/AppState.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/EmployeeList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WealthHealth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -838,16 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/employeeFactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/wealth-health-emblem.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -858,16 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="516">
           <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AddEmployee.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#74#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -904,8 +899,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/04_components/_add-employee.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2120">
-          <caret line="91" column="12" lean-forward="true" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="12" />
+        <state relative-caret-position="109">
+          <caret line="76" column="22" lean-forward="true" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/departments.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/context/AppState.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/states.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5238">
+          <caret line="194" column="21" selection-start-line="194" selection-start-column="21" selection-end-line="194" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/EmployeeList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1107">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#199#246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AddEmployee.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1898">
+          <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#90#0" expanded="true" />
+            <element signature="e#275#340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WealthHealth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/employeeFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
