@@ -12,15 +12,18 @@ Développeur d'application - JavaScript React
 - Default dropdown icons from [Mingcute Tiny Bold Line Icons Collection](https://www.svgrepo.com/collection/mingcute-tiny-bold-line-icons/).
 - DataGrid icons from [MUI Material Icons](https://mui.com/material-ui/material-icons/).
 
+## Prerequisites
+- [NodeJS](https://nodejs.org/en/).
+- [npm](https://www.npmjs.com/).
+
 ## jQuery replacement components
 - Datepicker: [React Datepicker](https://reactdatepicker.com/) - A simple and reusable datepicker component for React.
 - Modal dialog: [React-Toastify](https://fkhadra.github.io/react-toastify/introduction) - Easy to set up toast modals for React.
 - Employee table: [MUI DataGrid](https://mui.com/x/react-data-grid/) - A fast and extendable react data table and react data grid.
 - Dropdown: [React Searchable Dropdown Component for Create React App](https://www.npmjs.com/package/react-app-searchable-dropdown-component) - A searchable dropdown component for your React application.
 
-## Prerequisites
-- [NodeJS](https://nodejs.org/en/).
-- [npm](https://www.npmjs.com/).
+## Lighthouse performance reports
+- To be added.
 
 ## Demo
 This project is deployed using [netlify](https://www.netlify.com/) and can be accessed at https://oc-wealth-health.netlify.app.
