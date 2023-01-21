@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae25b4dc-48ca-4efd-8e92-54b7002ff324" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lighthouse/lighthouse_add_employee_react.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lighthouse/llighthouse_list_employees_react.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lighthouse/lighthouse_add_employee_jquery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lighthouse/lighthouse_add_employee_react.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lighthouse/lighthouse_list_employees_jquery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lighthouse/llighthouse_list_employees_react.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,12 +147,6 @@
               <item name="oc-p014" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="oc-p014" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oc-p014" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lighthouse" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -227,7 +221,7 @@
       <updated>1671200883600</updated>
       <workItem from="1671200887625" duration="32000" />
       <workItem from="1671201080508" duration="199518000" />
-      <workItem from="1673275824834" duration="46666000" />
+      <workItem from="1673275824834" duration="46913000" />
     </task>
     <task id="LOCAL-00001" summary="Initial component setup.">
       <created>1671396331147</created>
@@ -551,15 +545,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674225196006</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Added Lighthouse reports.">
+      <created>1674289229308</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1674289229308</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246216000" />
+    <option name="totallyTimeSpent" value="246463000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="15" y="27" width="1333" height="1283" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24632068" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -587,7 +587,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Dropdown component for address." />
     <MESSAGE value="Add the list of US states and refactor State dropdown." />
     <MESSAGE value="Added Zip Code field." />
     <MESSAGE value="Refactored dropdowns." />
@@ -612,7 +611,8 @@
     <MESSAGE value="Lighthouse accessibility improvements." />
     <MESSAGE value="Lighthouse performance improvements." />
     <MESSAGE value="Suspense with lazy loading on Routes and key components." />
-    <option name="LAST_COMMIT_MESSAGE" value="Suspense with lazy loading on Routes and key components." />
+    <MESSAGE value="Added Lighthouse reports." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Lighthouse reports." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/App.css" />
