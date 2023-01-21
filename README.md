@@ -23,7 +23,10 @@ Développeur d'application - JavaScript React
 - Dropdown: [React Searchable Dropdown Component for Create React App](https://www.npmjs.com/package/react-app-searchable-dropdown-component) - A searchable dropdown component for your React application.
 
 ## Lighthouse performance reports
-- To be added.
+- <a href='https://oc-wealth-health-reports.netlify.app/lighthouse_add_employee_react.html' target='_blank'>Add employee (React)</a>.
+- <a href='https://oc-wealth-health-reports.netlify.app/lighthouse_add_employee_jquery.html' target='_blank'>Add employee (jQuery)</a>.
+- <a href='https://oc-wealth-health-reports.netlify.app/lighthouse_list_employees_react.html' target='_blank'>List employees (React)</a>.
+- <a href='https://oc-wealth-health-reports.netlify.app/lighthouse_list_employees_jquery.html' target='_blank'>List employees (jQuery)</a>.
 
 ## Demo
 This project is deployed using [netlify](https://www.netlify.com/) and can be accessed at https://oc-wealth-health.netlify.app.
